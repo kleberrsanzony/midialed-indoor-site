@@ -1,1 +1,0 @@
-Site oficial MídiaLed Indoor. Arquivos de produção versionados diretamente na branch main.
