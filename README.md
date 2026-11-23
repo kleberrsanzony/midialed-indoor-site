@@ -24,4 +24,6 @@ Botões de contato abrem o WhatsApp (81) 98183-0554 com mensagem pronta; e-mail 
 
 ## Visual e animações
 
-Hero com parede 3D de painéis LED (`assets/telas/`, recortes das fotos e do storyboard) e totem recortado (`assets/totem-recorte.webp`), palavra giratória, cards com borda em degradê e números vazados, vitrine com filtros e troca de foto pré-carregada, uma animação de entrada por seção, abertura "painel ligando" (uma vez por sessão), modo claro/escuro (segue o aparelho e lembra a escolha em `mli-theme`) e suporte a `prefers-reduced-motion`.
+- Hero: painel de LED interativo em tela cheia (canvas em baixa resolução + máscara de pontos em CSS), com 4 cenas (ondas, mensagem rolando, campanha, equalizador), luz que segue o mouse e ondas ao tocar. Pausa fora da tela.
+- Estrutura: faixa de letreiro, bento de recursos, totem que troca a tela conforme a rolagem (4 capítulos), painéis de aplicações que expandem, fotos reais + ficha em blocos, linha do tempo que acende, FAQ com lateral fixa e letreiro de contato.
+- Títulos acendem como LED (efeito diferente por seção). Tema claro/escuro (`mli-theme`). Suporte a `prefers-reduced-motion`.

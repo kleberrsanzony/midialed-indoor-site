@@ -1,423 +1,459 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#01081a">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#03040c">
 <title>MídiaLed Indoor — A sua marca em outra dimensão</title>
 <meta name="description" content="Totem LED P2.9 Indoor: tecnologia, impacto visual e comunicação digital para lojas, eventos, clínicas, hotéis e showrooms. Conheça o MídiaLed Indoor.">
 <meta property="og:type" content="website"><meta property="og:title" content="MídiaLed Indoor | O impacto visual da sua marca"><meta property="og:description" content="Totem LED P2.9: comunicação digital elegante, viva e memorável.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/totem-recorte.webp">
-<script>var d=document.documentElement,t;try{t=localStorage.getItem('mli-theme')}catch(e){}d.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');try{if(!sessionStorage.getItem('mli-intro')){d.classList.add('intro');sessionStorage.setItem('mli-intro','1');setTimeout(function(){d.classList.remove('intro')},2600)}}catch(e){}setTimeout(function(){if(!d.classList.contains('motion-ready'))d.classList.remove('motion')},3000)}</script>
+<script>var d=document.documentElement,t;try{t=localStorage.getItem('mli-theme')}catch(e){}d.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion');setTimeout(function(){if(!d.classList.contains('motion-ready'))d.classList.remove('motion')},3000)}</script>
 <style>
-/* ===== Base e temas (marca: #00E5FF, #4B0082, #000000, #E7E7E7, #FFFFFF) ===== */
-:root{--cyan:#00e5ff;--purple:#4b0082;--violet:#9d35eb;--magenta:#d24bff;--ease:cubic-bezier(.16,1,.3,1);--ease-bounce:cubic-bezier(.34,1.56,.64,1);--r:24px;--night:#01081a;
---bg:#050711;--bg2:#0a0d1c;--fg:#f6faff;--muted:#a7b1c4;--card:#0d1122;--card2:#0a0d1a;--line:#ffffff1c;--acc:#00e5ff;--stroke:#2a3052;--shadow:#000a}
-[data-theme=light]{--bg:#f3f5fb;--bg2:#e8ecf6;--fg:#0a0d1a;--muted:#4b5468;--card:#ffffff;--card2:#f8f9fd;--line:#0a0d1a17;--acc:#0090ad;--stroke:#cdd3e8;--shadow:#1a1f4a26;color-scheme:light}
+/* ===== Marca: #00E5FF, #4B0082, #000000, #E7E7E7, #FFFFFF ===== */
+:root{--cyan:#00e5ff;--purple:#4b0082;--violet:#9d35eb;--magenta:#d24bff;--ink-night:#03040c;--ease:cubic-bezier(.16,1,.3,1);--ease-bounce:cubic-bezier(.34,1.56,.64,1);
+--bg:#05060f;--bg2:#090b18;--fg:#f4f8ff;--muted:#9ea9be;--card:#0c0f1e;--card2:#10142a;--line:#ffffff1a;--acc:#00e5ff;--shadow:#000b;--dots:#ffffff10}
+[data-theme=light]{--bg:#f3f5fb;--bg2:#e9ecf6;--fg:#0a0d1a;--muted:#4b5468;--card:#ffffff;--card2:#f6f7fc;--line:#0a0d1a17;--acc:#008ba8;--shadow:#1a1f4a22;--dots:#0a0d1a0d;color-scheme:light}
 [data-theme=dark]{color-scheme:dark}
-*{box-sizing:border-box}html{scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 Inter,Arial,sans-serif;transition:background .4s,color .4s}
+*{box-sizing:border-box}html{scroll-padding-top:100px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 Inter,Arial,sans-serif;transition:background .4s,color .4s}
 a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}img{max-width:100%;display:block}h1,h2,h3,p{margin:0}
-h1,h2,h3{font-family:Montserrat,Arial,sans-serif;line-height:1.1;letter-spacing:-.045em}h2{font-size:clamp(29px,3.6vw,52px)}h3{font-size:20px}
-main{overflow-x:clip}.container{max-width:1240px;margin:0 auto;padding:0 25px}
+h1,h2,h3{font-family:Montserrat,Arial,sans-serif;line-height:1.05;letter-spacing:-.045em}h2{font-size:clamp(32px,4.4vw,64px);font-weight:800}h3{font-size:20px}
+main{overflow-x:clip}.container{max-width:1280px;margin:0 auto;padding:0 28px}
 .skip{position:absolute;left:-10000px}.skip:focus{left:10px;top:10px;padding:8px;background:#fff;color:#000;z-index:200}
-.eyebrow{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--acc)}
-.gradient{background:linear-gradient(100deg,var(--acc),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-[data-theme=light] .gradient{background-image:linear-gradient(100deg,#0090ad,#4b0082)}
-.lead{color:var(--muted);font-size:16px;line-height:1.8}
-.section{padding:110px 0;position:relative}
-.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:46px}.sectionhead>div{max-width:720px}.sectionhead .lead{max-width:430px}.sectionhead h2{margin-top:12px}
-/* ===== Botões ===== */
-.btn{position:relative;display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:15px 24px;border:1px solid transparent;border-radius:12px;font-size:13.5px;font-weight:800;white-space:nowrap;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .3s,border-color .3s,color .3s}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:var(--acc)}
+.kicker:before{content:'';width:22px;height:8px;background:radial-gradient(circle,currentColor 1.6px,transparent 2.2px) 0 50%/6px 8px repeat-x}
+.hl{background:linear-gradient(100deg,var(--cyan),var(--violet) 70%,var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+[data-theme=light] .hl{background-image:linear-gradient(100deg,#008ba8,#4b0082 70%)}
+.lead{color:var(--muted);font-size:17px;line-height:1.75}
+.section{padding:120px 0;position:relative}
+.head{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:56px}.head h2{margin-top:14px}
+/* botões */
+.btn{position:relative;display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;border:1px solid transparent;font-size:14px;font-weight:800;white-space:nowrap;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .3s,color .3s,border-color .3s}
 .btn__arrow{display:inline-block;transition:transform .45s var(--ease)}.btn:hover .btn__arrow{transform:translate(3px,-3px) rotate(8deg)}
-.primary{background:var(--cyan);color:#001118;box-shadow:0 10px 30px -8px #00e5ff88}
-.primary:before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,#ffffffb0 50%,transparent 70%);transform:translateX(-120%);animation:btnShine 4.5s var(--ease) 2.5s infinite;pointer-events:none}
-@keyframes btnShine{30%,100%{transform:translateX(120%)}}
-.primary:hover{box-shadow:0 16px 40px -8px #00e5ffaa;transform:translateY(-2px)}
-.secondary{border-color:#ffffff4d;color:#fff;background:#ffffff0d}.secondary:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
-.line{border-color:var(--line);color:var(--fg);background:var(--card)}.line:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
-/* ===== Cabeçalho (sempre escuro, combina com a logo) ===== */
-.navshell{position:sticky;top:0;z-index:50;background:var(--night);border-bottom:1px solid #ffffff14;transition:box-shadow .4s;animation:headerIn .9s var(--ease) both}
-@keyframes headerIn{from{transform:translateY(-40px);opacity:0}}
-.navshell.is-scrolled{box-shadow:0 12px 40px #0008}
-.nav{min-height:78px;display:flex;align-items:center;gap:22px;color:#fff}
-.brand{display:flex;align-items:center;margin-right:auto}.brandmark{height:54px;width:auto;transition:height .4s var(--ease)}
-.is-scrolled .brandmark{height:46px}
-.navlinks{position:relative;display:flex;align-items:center;gap:24px;font-weight:600;font-size:13px}
-.navlinks a:not(.btn){position:relative;padding:6px 0;color:#d6deec;transition:color .3s}.navlinks a:not(.btn):hover,.navlinks a[aria-current]{color:var(--cyan)}
-.nav-underline{position:absolute;left:0;bottom:-2px;height:2px;width:0;background:linear-gradient(90deg,var(--cyan),var(--violet));border-radius:2px;opacity:0;transition:transform .5s var(--ease),width .5s var(--ease),opacity .3s;pointer-events:none}
-.navlinks .btn{padding:11px 18px;font-size:12.5px}
-.theme-toggle{position:relative;flex:0 0 42px;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff2a;background:transparent;color:#fff;display:grid;place-items:center;overflow:hidden;transition:background .3s,transform .4s var(--ease)}
-.theme-toggle:hover{transform:rotate(-12deg) scale(1.06);background:#ffffff12}
-.theme-toggle svg{grid-area:1/1;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;transition:transform .6s var(--ease),opacity .4s}
-.theme-toggle .i-sun,[data-theme=light] .theme-toggle .i-moon{transform:translateY(120%) rotate(90deg);opacity:0}
-[data-theme=light] .theme-toggle .i-sun{transform:none;opacity:1}
-.menu{display:none;border:1px solid #ffffff2a;background:transparent;color:#fff;border-radius:10px;font-size:22px;width:43px;height:42px}
-.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--magenta));transform-origin:left;transform:scaleX(0)}
-/* ===== HERO cinematográfico: parede 3D de painéis LED ===== */
-.hx{position:relative;overflow:hidden;isolation:isolate;background:#03040c;color:#fff;min-height:calc(100svh - 78px);display:flex;flex-direction:column;justify-content:center;padding:60px 0 0}
-.hx-glow{position:absolute;inset:0;z-index:-4;background:radial-gradient(ellipse 60% 55% at 78% 30%,#4b008266,transparent 70%),radial-gradient(ellipse 45% 40% at 15% 85%,#00e5ff1f,transparent 70%),radial-gradient(ellipse 40% 50% at 60% 90%,#9d35eb33,transparent 70%)}
-.hx-wall{position:absolute;z-index:-3;top:-22%;right:-16%;width:74%;height:150%;perspective:1600px;pointer-events:none}
-.hx-wall-inner{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;transform:rotateY(-26deg) rotateX(12deg) rotateZ(5deg);transform-style:preserve-3d;transition:transform 1.2s var(--ease)}
-.hx-col{overflow:hidden}
-.hx-track{display:flex;flex-direction:column;gap:16px;animation:wallUp 50s linear infinite;will-change:transform;backface-visibility:hidden}
-.hx-col:nth-child(even) .hx-track{animation-name:wallDown;animation-duration:58s}.hx-col:nth-child(3) .hx-track{animation-duration:44s}
-@keyframes wallUp{to{transform:translateY(calc(-50% - 8px))}}@keyframes wallDown{from{transform:translateY(calc(-50% - 8px))}to{transform:none}}
-.hx-screen{position:relative;border-radius:10px;padding:5px;background:linear-gradient(160deg,#25283a,#08090f);box-shadow:0 18px 30px -12px #000c,0 0 0 1px #ffffff12}
-.hx-screen img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;filter:saturate(1.15) brightness(.85)}
-/* textura de pixels LED (estática) */
-.hx-screen:after{content:'';position:absolute;inset:5px;border-radius:6px;background:radial-gradient(circle,transparent 45%,#000a 75%) 0 0/4px 4px,linear-gradient(115deg,#ffffff22,transparent 40%);pointer-events:none}
-.hx-col:nth-child(2) .hx-screen:nth-child(2),.hx-col:nth-child(3) .hx-screen:nth-child(3){box-shadow:0 0 0 2px var(--cyan),0 0 40px #00e5ff77}
-.hx-col:nth-child(2) .hx-screen:nth-child(2):before,.hx-col:nth-child(3) .hx-screen:nth-child(3):before{content:'';position:absolute;inset:-12px;border-radius:18px;box-shadow:0 0 50px 8px #00e5ffaa;opacity:0;animation:onair 2.8s ease-in-out infinite;pointer-events:none}
-@keyframes onair{50%{opacity:1}}
-.hx-veil{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#03040c 0%,#03040cf0 32%,#03040ca6 52%,transparent 78%),linear-gradient(0deg,#03040c 0%,transparent 26%),linear-gradient(180deg,#03040c 0%,transparent 14%);pointer-events:none}
-.hx-spot{position:absolute;left:0;top:0;width:1000px;height:1000px;z-index:-1;pointer-events:none;background:radial-gradient(circle,#00e5ff1c,transparent 50%);transform:translate(500px,-200px);will-change:transform}
-.hx-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;width:100%}
-.hx-copy{max-width:680px}
-.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 12px;border-radius:999px;background:#ffffff10;border:1px solid #00e5ff55;color:#bff7ff;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
-.dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;box-shadow:0 0 0 0 #00e5ffaa;animation:live 1.8s infinite}
-@keyframes live{70%{box-shadow:0 0 0 9px #00e5ff00}100%{box-shadow:0 0 0 0 #00e5ff00}}
-.hx-title{font-size:clamp(44px,6vw,88px);font-weight:800;line-height:.98;letter-spacing:-.055em;margin:24px 0 20px}
-.hx-line{display:block;overflow:hidden;padding-bottom:.07em;white-space:nowrap}.hx-line>span{display:inline-block}
-.hx-rot{display:inline-block;position:relative;vertical-align:bottom;overflow:hidden;padding:0 .04em .08em}
-.hx-word{display:inline-block;background:linear-gradient(90deg,#fff 0%,#9ff4ff 22%,#00e5ff 42%,#b46bff 62%,#9ff4ff 80%,#fff 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite;will-change:background-position}
+.b-cyan{background:var(--cyan);color:#00131a;box-shadow:0 12px 34px -10px #00e5ffaa}.b-cyan:hover{transform:translateY(-2px);box-shadow:0 0 0 6px #00e5ff22,0 18px 40px -10px #00e5ffcc}
+.b-ghost{border-color:#ffffff40;color:#fff;background:#ffffff0a}.b-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.b-line{border-color:var(--line);color:var(--fg);background:var(--card)}.b-line:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
+/* ===== Cabeçalho flutuante em pílula ===== */
+.navshell{position:fixed;z-index:60;top:14px;left:0;right:0;padding:0 14px;pointer-events:none}
+.nav{pointer-events:auto;max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:8px 8px 8px 18px;border-radius:999px;background:#03040ceb;border:1px solid #ffffff1c;box-shadow:0 20px 50px -20px #000c;color:#fff;transition:transform .5s var(--ease)}
+.navshell.hide .nav{transform:translateY(-140%)}
+.brand{margin-right:auto;display:flex}.brandmark{height:46px;width:auto}
+.navlinks{position:relative;display:flex;align-items:center;gap:4px;font-weight:600;font-size:13px}
+.navlinks a:not(.btn){padding:9px 13px;border-radius:999px;color:#cfd8e8;transition:color .3s,background .3s}.navlinks a:not(.btn):hover,.navlinks a[aria-current]{color:#fff;background:#ffffff12}
+.navlinks a[aria-current]{box-shadow:inset 0 -2px 0 var(--cyan)}
+.navlinks .btn{padding:12px 18px;font-size:12.5px;margin-left:8px}
+.theme-toggle{flex:0 0 42px;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff2a;background:transparent;color:#fff;display:grid;place-items:center;overflow:hidden;transition:background .3s,transform .4s var(--ease)}
+.theme-toggle:hover{transform:rotate(-12deg);background:#ffffff12}
+.theme-toggle svg{grid-area:1/1;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;transition:transform .6s var(--ease),opacity .4s}
+.theme-toggle .i-sun,[data-theme=light] .theme-toggle .i-moon{transform:translateY(120%) rotate(90deg);opacity:0}[data-theme=light] .theme-toggle .i-sun{transform:none;opacity:1}
+.menu{display:none;border:1px solid #ffffff2a;background:transparent;color:#fff;border-radius:50%;font-size:19px;width:42px;height:42px;flex:0 0 42px}
+/* ===== HERO: painel de LED interativo em tela cheia ===== */
+.led{position:relative;isolation:isolate;min-height:100svh;background:var(--ink-night);color:#fff;overflow:hidden;display:flex;align-items:flex-end;cursor:crosshair}
+.led canvas{position:absolute;left:0;top:0;z-index:-3;image-rendering:pixelated;image-rendering:crisp-edges}
+/* máscara de LEDs redondos (estática): escurece o espaço entre os pixels */
+.led-dots{position:absolute;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(circle at 50% 50%,transparent 0 36%,#03040c 62%) 0 0/var(--p,9px) var(--p,9px)}
+.led-fade{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(0deg,#03040c 0%,#03040cf2 24%,#03040c99 44%,transparent 66%),linear-gradient(180deg,#03040cb3,transparent 22%)}
+.led-hud{position:absolute;top:96px;right:28px;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font:700 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.hud-live{display:flex;align-items:center;gap:9px;padding:9px 13px;border-radius:999px;background:#03040cd9;border:1px solid #ffffff22}
+.hud-live i{width:8px;height:8px;border-radius:50%;background:#ff3b5c;animation:blink 1.2s steps(2) infinite}@keyframes blink{50%{opacity:.2}}
+.hud-live b{color:var(--cyan);font-weight:800}
+.hud-scenes{display:flex;gap:6px;padding:6px;border-radius:999px;background:#03040cd9;border:1px solid #ffffff22}
+.hud-scenes button{width:34px;height:34px;border-radius:50%;border:0;background:#ffffff10;color:#cfe;font:800 11px Inter,sans-serif;transition:background .3s,color .3s,transform .3s var(--ease)}
+.hud-scenes button[aria-pressed=true]{background:var(--cyan);color:#00131a;transform:scale(1.08)}
+.hud-hint{color:#ffffffa6;letter-spacing:.1em;padding-right:4px}
+.led-copy{position:relative;width:100%;padding-bottom:64px}
+.led-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:end}
+.led h1{font-size:clamp(46px,7.4vw,118px);font-weight:900;line-height:.9;letter-spacing:-.06em}
+.led h1 .row{display:block;overflow:hidden;padding-bottom:.06em}.led h1 .row>span{display:inline-block}
+.led h1 .glow{color:transparent;background:linear-gradient(90deg,#9ff4ff,#00e5ff 30%,#b46bff 65%,#9ff4ff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;animation:shimmer 6s linear infinite}
 @keyframes shimmer{to{background-position:-200% 0}}
-.hx-word.out{animation:shimmer 5s linear infinite,wordOut .45s var(--ease) forwards}.hx-word.in{animation:shimmer 5s linear infinite,wordIn .7s var(--ease) both}
-@keyframes wordOut{to{transform:translateY(-105%) rotate(-4deg);opacity:0}}@keyframes wordIn{from{transform:translateY(105%) rotate(4deg);opacity:0}}
-.hx .lead{font-size:18px;color:#c9d6ea;max-width:560px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0}
-.trust{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;font-weight:600;color:#cfdaea}
-.trust span{padding:7px 12px;border-radius:999px;background:#ffffff0d;border:1px solid #ffffff1c}.trust b{color:var(--cyan)}
-.hx-product{position:relative;display:flex;justify-content:center;align-items:flex-end;height:min(640px,72svh)}
-.hx-product:before{content:'';position:absolute;left:8%;right:8%;bottom:-2%;height:18%;border-radius:50%;background:radial-gradient(ellipse,#00e5ff55,#4b008244 40%,transparent 70%)}
-.hx-product img{position:relative;height:100%;width:auto;filter:drop-shadow(0 30px 40px #000c);animation:floaty 6s ease-in-out infinite;will-change:transform}
-@keyframes floaty{50%{transform:translateY(-12px)}}
-.hx-tag{position:absolute;z-index:2;right:2%;top:16%;display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#ffffffee;color:#2a0055;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 18px 40px #000a}
-.hx-tag i{width:8px;height:8px;border-radius:50%;background:#00b8d4}
-.statbar{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin:40px 0 50px;border-radius:20px;border:1.5px solid transparent;background:linear-gradient(#0b0e1df2,#070914f2) padding-box,linear-gradient(120deg,#00e5ff,#2a2f55 35%,#2a2f55 65%,#9d35eb) border-box;box-shadow:0 30px 60px -20px #000}
-.stat{padding:26px 30px}.stat:not(:last-child){border-right:1px solid #ffffff17}
-.stat b{font:800 clamp(22px,2.6vw,32px) Montserrat,sans-serif;display:block;line-height:1.15;background:linear-gradient(100deg,#fff,#9ff4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.stat small{color:#a4b1c4;font-size:12px}
-/* ===== Cards de impacto (solução) ===== */
-.valuegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.value{position:relative;overflow:hidden;min-height:260px;padding:32px 28px;border-radius:var(--r);border:1.5px solid transparent;background:linear-gradient(var(--card),var(--card2)) padding-box,linear-gradient(140deg,#00e5ff,#2b3160 38%,#2b3160 62%,#9d35eb) border-box;box-shadow:0 30px 60px -26px var(--shadow);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
-[data-theme=light] .value{background:linear-gradient(#fff,#fff) padding-box,linear-gradient(140deg,#00e5ff,#dfe4f3 38%,#e6e9f5 62%,#9d35eb) border-box}
-.value .ic{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(140deg,#00b8d4,#4b0082 60%,#9d35eb);box-shadow:0 14px 30px -8px #4b0082aa,inset 0 1px 0 #ffffff55;transition:transform .6s var(--ease)}
-.value .ic svg{width:27px;height:27px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.value .n{position:absolute;top:18px;right:22px;font:900 52px/1 Montserrat,sans-serif;color:transparent;-webkit-text-stroke:1.2px var(--stroke);transition:-webkit-text-stroke-color .4s,transform .6s var(--ease)}
-.value h3{margin:26px 0 10px}.value p{color:var(--muted);font-size:14px;max-width:310px}
-.value:before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(105deg,transparent 35%,#ffffff26 50%,transparent 65%);transform:translateX(-120%);pointer-events:none;z-index:1}
-.value.in:before{animation:cardShine 1.2s var(--ease) calc(var(--d,0s) + .5s)}@keyframes cardShine{to{transform:translateX(120%)}}
-.value:after,.appcard:after{content:'';position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),#00e5ff1a,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
-.value:hover:after,.appcard:hover:after{opacity:1}
-.value:hover{transform:translateY(-12px);box-shadow:0 40px 70px -24px #4b008288}
-.value:hover .ic{transform:rotate(-10deg) scale(1.1)}.value:hover .n{-webkit-text-stroke-color:var(--cyan);transform:translateY(-4px)}
-/* ===== Vitrine do produto ===== */
-.showcase{background:radial-gradient(ellipse at 100% 0,#4b00822e,transparent 50%),var(--bg2)}
-.filters{position:relative;display:inline-flex;flex-wrap:wrap;gap:4px;padding:5px;border-radius:999px;background:var(--card);border:1px solid var(--line);margin:22px 0 18px}
-.filters button{position:relative;z-index:1;border:0;background:none;padding:9px 16px;border-radius:999px;font-weight:700;font-size:13px;color:var(--muted);transition:color .3s}
-.filters button.is-active{color:#001118}
-.f-pill{position:absolute;z-index:0;left:0;top:0;border-radius:999px;background:linear-gradient(120deg,#00e5ff,#7fd8ff);box-shadow:0 8px 20px #00e5ff40;transition:transform .5s var(--ease),width .5s var(--ease),height .5s var(--ease)}
-.gallery{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
-.stage{margin:0;border-radius:26px;overflow:hidden;border:1px solid var(--line);background:var(--card);box-shadow:0 30px 70px -30px var(--shadow)}
-.stage-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:radial-gradient(circle at 50% 45%,#fff 55%,#eef1f8);touch-action:pan-y}
-.stage-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:4%;opacity:0;transition:opacity .7s ease}
-.stage-media img.on{opacity:1}.stage-media img.kb{animation:kb 7s linear both}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
-.stage-cat{position:absolute;z-index:1;left:16px;top:16px;background:#0a0d1a;color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
-.stage-ctrl{position:absolute;z-index:1;right:14px;bottom:16px;display:flex;align-items:center;gap:10px;color:#0a0d1a;font-size:13px;font-weight:700}
-.stage-ctrl button{width:40px;height:40px;border-radius:50%;border:1px solid #0a0d1a26;background:#fff;color:#0a0d1a;transition:background .3s,color .3s,transform .3s var(--ease)}
-.stage-ctrl button:hover{background:#0a0d1a;color:var(--cyan);transform:scale(1.08)}.stage-count b{font-size:18px}
-.stage-progress{position:absolute;z-index:1;left:0;right:0;bottom:0;height:3px;background:#0a0d1a14}
-.stage-progress span{display:block;height:100%;background:linear-gradient(90deg,#00e5ff,#9d35eb);transform-origin:left;transform:scaleX(0)}
-.stage-progress.run span{animation:prog 6s linear forwards}@keyframes prog{to{transform:scaleX(1)}}
-.stage:hover .stage-progress.run span,.stage:focus-within .stage-progress.run span{animation-play-state:paused}
-.stage-info{padding:20px 24px 24px}.stage-info h3{font-size:22px}.stage-info p{color:var(--muted);font-size:14px;margin-top:6px}
-.stage-info.flash>*{animation:fadeUpSm .5s var(--ease) both}.stage-info.flash>*:nth-child(2){animation-delay:.06s}@keyframes fadeUpSm{from{opacity:0;transform:translateY(14px)}}
-.gallery-text h2{margin:14px 0 18px}
-.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;perspective:900px}
-.thumb{position:relative;border:0;padding:6px;border-radius:14px;aspect-ratio:3/4;background:#fff;transform:rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .4s var(--ease),box-shadow .4s,opacity .4s,scale .4s var(--ease);box-shadow:0 8px 20px -6px var(--shadow),0 0 0 1px var(--line)}
-.thumb img{width:100%;height:100%;object-fit:contain;transition:transform .8s var(--ease)}
-.thumb:hover img{transform:scale(1.08)}
-.thumb.is-active{box-shadow:0 0 0 3px var(--cyan),0 14px 30px #00e5ff44}
-.thumb.is-hidden{display:none}.thumb.pop{animation:popIn .5s var(--ease) both}@keyframes popIn{from{opacity:0;scale:.9}}
-.smallnote{font-size:12px;color:var(--muted);margin-top:17px}
-/* ===== Aplicações ===== */
-.applications{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.appcard{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);min-height:200px;border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 40px -26px var(--shadow);transition:transform .45s var(--ease),border-color .4s,box-shadow .45s var(--ease)}
-.appcard:hover{transform:translateY(-8px);border-color:#00e5ff66;box-shadow:0 30px 50px -24px #4b008266}
-.appcard i{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:linear-gradient(140deg,#00e5ff22,#9d35eb33);border:1px solid #00e5ff40;transition:transform .5s var(--ease),rotate .9s var(--ease),scale .9s var(--ease);transition-delay:0s,calc(var(--d,0s) + .35s),calc(var(--d,0s) + .35s)}
-.appcard i svg{width:22px;height:22px;fill:none;stroke:var(--acc);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.appcard:hover i{transform:scale(1.15) rotate(-8deg)}
-.appcard b{font:800 15.5px Montserrat,sans-serif;letter-spacing:-.02em}.appcard p{font-size:12.5px;color:var(--muted);margin-top:6px}
-/* ===== Especificações ===== */
-.spec{background:linear-gradient(125deg,var(--bg2),var(--bg))}
-.spec-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
-.specintro{position:sticky;top:110px}.specintro h2{margin:16px 0 18px}
-.specintro .specimg{margin-top:28px;border-radius:20px;background:radial-gradient(circle,#fff 55%,#eef1f8);border:1px solid var(--line);padding:12px}
-.specintro img{height:340px;width:100%;object-fit:contain}
-.spec-table{border-radius:20px;overflow:hidden;border:1.5px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(140deg,#00e5ff88,var(--line) 40%,var(--line) 60%,#9d35eb88) border-box;box-shadow:0 30px 60px -30px var(--shadow)}
-.spec-row{display:grid;grid-template-columns:1fr 1.1fr;padding:16px 22px;border-bottom:1px solid var(--line);gap:15px;font-size:14px;transition:background .3s}
-.spec-row:last-child{border:none}.spec-row:nth-child(odd){background:#80808008}.spec-row:hover{background:#00e5ff10}
-.spec-row span{color:var(--muted)}.spec-row b{font-weight:700}
-.note{margin-top:18px;font-size:12px;line-height:1.75;color:var(--muted)}
-/* ===== Passo a passo ===== */
-.timeline{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.timeline:before{content:'';position:absolute;left:30px;right:30px;top:60px;height:2px;background:linear-gradient(90deg,#00e5ff,#9d35eb);transform-origin:left;transition:transform 1.4s var(--ease) .3s}
-.motion .timeline:not(.in):before{transform:scaleX(0)}
-.step{position:relative;padding:30px;border-radius:22px;border:1px solid var(--line);background:var(--card);box-shadow:0 20px 40px -28px var(--shadow)}
-.step .n{position:relative;display:inline-block;padding-right:14px;background:var(--card);font:900 64px/1 Montserrat,sans-serif;color:transparent;-webkit-text-stroke:1.4px var(--violet);margin-bottom:28px}
-.step h3{margin-bottom:11px}.step p{color:var(--muted);font-size:14px}
-/* ===== Faixa de chamada ===== */
-.cta-band{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 85% 50%,#4b0082aa,transparent 55%),radial-gradient(ellipse at 10% 120%,#00e5ff33,transparent 50%),#02061a;border-top:1px solid #00e5ff33;border-bottom:1px solid #9d35eb33}
-.cta-band:after{content:'';position:absolute;right:-5%;top:0;bottom:0;width:45%;background:radial-gradient(circle,#00e5ff 1.4px,transparent 2px) 0 0/16px 16px;opacity:.16;pointer-events:none}
-.cta-band-inner{position:relative;z-index:1;display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;padding-top:60px;padding-bottom:60px}
-.cta-band-brand{border-right:1px solid #ffffff33;padding-right:36px}.cta-band-brand img{height:80px;width:auto}
-.cta-band p{font:700 clamp(20px,2.4vw,30px)/1.25 Montserrat,sans-serif;font-style:italic;max-width:560px}.cta-band p em{color:var(--cyan)}
-/* ===== FAQ ===== */
-.faq{max-width:840px;margin:auto}
-.faq details{padding:22px 4px;border-bottom:1px solid var(--line)}
-.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}.faq summary::-webkit-details-marker{display:none}
-.faq summary:after{content:'+';flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--acc);transition:rotate .4s var(--ease),background .3s}
-.faq details[open] summary:after{rotate:45deg;background:#00e5ff1a}
-.faq p{color:var(--muted);font-size:14px;margin-top:12px}
-/* ===== Contato ===== */
-.contact{text-align:center;background:radial-gradient(ellipse at 50% 0,#4b008233,transparent 60%),var(--bg2)}
-.contact h2{max-width:900px;margin:12px auto 20px}.contact .lead{max-width:720px;margin:0 auto}.contact .actions{justify-content:center}
-.contact-cards{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-.contact-card{display:flex;align-items:center;gap:14px;padding:16px 22px 16px 16px;border-radius:18px;background:var(--card);border:1px solid var(--line);box-shadow:0 18px 40px -22px var(--shadow);text-align:left;transition:transform .4s var(--ease),border-color .4s}
-.contact-card:hover{transform:translateY(-4px);border-color:#00e5ff77}
-.cc-ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(140deg,#00b8d4,#4b0082 60%,#9d35eb);flex:0 0 46px}
-.cc-ic svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.contact-card small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:700}.contact-card b{font-size:17px;color:var(--acc)}
-/* ===== Rodapé e CTA fixo ===== */
-.foot{background:var(--night);padding:44px 0;color:#a4afc0;font-size:13px}
-.footgrid{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.footgrid img{height:46px;width:auto}
+.led-side .lead{color:#c5d1e4;font-size:16.5px}
+.led-side .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.led-meta{display:flex;flex-wrap:wrap;gap:22px 34px;margin-top:40px;padding-top:22px;border-top:1px solid #ffffff1f;font-size:12px;color:#9fb0c8}
+.led-meta b{display:block;font:800 22px Montserrat,sans-serif;color:#fff;letter-spacing:-.02em}
+/* ===== Faixa de letreiro ===== */
+.ticker{position:relative;overflow:hidden;background:var(--cyan);color:#00131a;padding:16px 0;transform:rotate(-1.4deg) scale(1.03);margin:-14px 0 0;z-index:3;box-shadow:0 20px 40px -20px #00e5ff88}
+.ticker-track{display:flex;width:max-content;animation:tick 32s linear infinite;will-change:transform}
+.ticker span{display:flex;align-items:center;gap:28px;padding-right:28px;font:900 clamp(18px,2.2vw,28px)/1 Montserrat,sans-serif;letter-spacing:-.02em;text-transform:uppercase;white-space:nowrap}
+.ticker span i{width:12px;height:12px;background:radial-gradient(circle,#4b0082 2px,transparent 2.6px) 0 0/6px 6px;flex:0 0 12px}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* ===== Bento (solução) ===== */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(220px,auto);gap:16px}
+.tile{position:relative;overflow:hidden;border-radius:28px;background:var(--card);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 30px 60px -36px var(--shadow);transition:transform .5s var(--ease),border-color .4s}
+.tile:before{content:'';position:absolute;inset:0;background:radial-gradient(circle,var(--dots) 1.5px,transparent 2px) 0 0/12px 12px;pointer-events:none}
+.tile:after{content:'';position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),#00e5ff22,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
+.tile:hover{transform:translateY(-6px);border-color:#00e5ff55}.tile:hover:after{opacity:1}
+.tile>*{position:relative;z-index:1}.tile p{color:var(--muted);font-size:14.5px;margin-top:10px;max-width:420px}
+.t-hero{grid-column:span 2;grid-row:span 2;background:radial-gradient(ellipse at 70% 30%,#4b008266,transparent 60%),linear-gradient(160deg,#0b0f24,#05060f);color:#fff;border-color:#ffffff1a;min-height:470px}
+.t-hero:before{background-image:radial-gradient(circle,#ffffff10 1.5px,transparent 2px)}
+.t-hero p{color:#b9c5da;max-width:55%}
+.t-hero>img{position:absolute;right:2%;top:6%;height:88%;width:auto;z-index:0;filter:drop-shadow(0 30px 40px #000);transition:transform .8s var(--ease)}
+.t-hero:hover>img{transform:translateY(-10px) rotate(-2deg)}
+.t-hero h3{font-size:clamp(28px,3vw,40px);max-width:58%}
+.t-tag{position:absolute;left:28px;top:28px;z-index:1;font:800 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:#00e5ff1f;color:var(--cyan);border:1px solid #00e5ff44}
+.t-wide{grid-column:span 2}
+.ruler{display:flex;align-items:flex-end;gap:22px;margin-bottom:auto;padding-bottom:20px}
+.ruler b{font:900 clamp(44px,5vw,72px)/.9 Montserrat,sans-serif;letter-spacing:-.05em}.ruler small{display:block;font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.06em}
+.ruler .x{font:700 28px Montserrat;color:var(--muted)}
+.t-pitch{background:linear-gradient(150deg,#4b0082,#1b0a3a);color:#fff;border-color:#9d35eb55}
+.t-pitch:before{background-image:radial-gradient(circle,#00e5ff44 1.6px,transparent 2.2px)}
+.t-pitch b{font:900 clamp(56px,6vw,88px)/.85 Montserrat,sans-serif;letter-spacing:-.06em;margin-bottom:auto;padding-bottom:16px;background:linear-gradient(180deg,#fff,#9ff4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.t-pitch p{color:#d9c8ff}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:auto;padding-bottom:16px}
+.chips span{padding:8px 13px;border-radius:12px;font-size:12.5px;font-weight:700;background:var(--card2);border:1px solid var(--line)}
+.chips span:first-child{border-color:#00e5ff66;color:var(--acc)}
+/* ===== Produto: totem que conta a história ao rolar ===== */
+.story{background:radial-gradient(ellipse at 80% 20%,#4b008226,transparent 55%),var(--bg2)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.chapter{min-height:78vh;display:flex;flex-direction:column;justify-content:center;opacity:.28;transition:opacity .6s var(--ease)}
+.chapter.on{opacity:1}
+.chapter .num{font:900 15px Montserrat,sans-serif;color:var(--acc);letter-spacing:.1em}
+.chapter h3{font-size:clamp(30px,3.4vw,48px);margin:12px 0 16px;font-weight:800}
+.chapter p{color:var(--muted);font-size:16.5px;max-width:470px}
+.chapter ul{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.chapter li{padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700;background:var(--card);border:1px solid var(--line)}
+.stage{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center}
+.totem{position:relative;height:min(76vh,700px);aspect-ratio:65/220;display:flex;flex-direction:column;align-items:center}
+.t-screen{position:relative;width:100%;flex:1;border-radius:6px;overflow:hidden;background:#000;border:5px solid #15161d;box-shadow:0 0 0 1px #ffffff1a,0 40px 80px -20px #000,0 0 120px -30px #00e5ff88}
+.t-screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;scale:1.08;transition:opacity .8s ease,scale 1.4s var(--ease)}
+.t-screen img.on{opacity:1;scale:1}
+.t-screen:after{content:'';position:absolute;inset:0;background:radial-gradient(circle,transparent 42%,#000a 72%) 0 0/4px 4px,linear-gradient(115deg,#ffffff1c,transparent 35%);pointer-events:none}
+.t-base{width:128%;height:7.5%;margin-top:-1px;border-radius:6px 6px 14px 14px;background:linear-gradient(180deg,#22232c,#0c0c11);box-shadow:0 20px 30px -10px #000;position:relative}
+.t-base:before,.t-base:after{content:'';position:absolute;bottom:-12px;width:16px;height:16px;border-radius:50%;background:#0b0b0f;border:3px solid #33343e;left:8%}.t-base:after{left:auto;right:8%}
+.t-floor{position:absolute;bottom:-40px;left:-40%;right:-40%;height:60px;background:radial-gradient(ellipse,#00e5ff33,transparent 65%)}
+.co{position:absolute;z-index:2;opacity:0;scale:.9;transition:opacity .5s var(--ease),scale .6s var(--ease-bounce);pointer-events:none}
+.stage[data-step="1"] .co1,.stage[data-step="2"] .co2,.stage[data-step="3"] .co3,.stage[data-step="4"] .co4{opacity:1;scale:1}
+.co-pill{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:9px 14px;border-radius:999px;background:#fff;color:#1a0040;font-size:12px;font-weight:800;box-shadow:0 18px 40px -10px #000a}
+.co-pill i{width:8px;height:8px;border-radius:50%;background:#00b8d4}
+.co1{left:-62px;top:0;bottom:9%;width:2px;background:linear-gradient(var(--cyan),var(--violet))}
+.co1:before,.co1:after{content:'';position:absolute;left:-7px;width:16px;height:2px;background:var(--cyan)}.co1:before{top:0}.co1:after{bottom:0;background:var(--violet)}
+.co1 .co-pill{position:absolute;top:50%;right:14px;translate:0 -50%}
+.co2{right:-70px;top:14%;width:150px;height:150px;border-radius:50%;border:3px solid #fff;background:radial-gradient(circle,#00e5ff 34%,transparent 40%) 0 0/18px 18px,radial-gradient(circle at 30% 30%,#9d35eb,#4b0082);box-shadow:0 20px 50px -10px #000c,0 0 0 8px #ffffff1a}
+.co2 .co-pill{position:absolute;bottom:-18px;left:50%;translate:-50% 0}
+.co3{right:-90px;top:8%;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.co4{left:50%;bottom:-4px;translate:-50% 0}.co4 .co-pill{translate:0 54px}
+.dots{position:absolute;left:-46px;top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:10px}
+.dots span{width:8px;height:8px;border-radius:50%;background:var(--line);transition:background .4s,height .4s var(--ease)}.dots span.on{background:var(--acc);height:26px;border-radius:6px}
+/* ===== Aplicações: painéis que expandem ===== */
+.panels{display:flex;gap:12px;height:460px}
+.panel{position:relative;flex:1;min-width:0;border-radius:26px;overflow:hidden;border:1px solid var(--line);background:var(--card);padding:26px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:flex .7s var(--ease),border-color .4s;outline:none}
+.panel:focus-visible{box-shadow:0 0 0 3px var(--c)}
+.panel:before{content:'';position:absolute;inset:0;background:radial-gradient(circle,var(--c,#00e5ff) 1.6px,transparent 2.2px) 0 0/12px 12px;opacity:.12;transition:opacity .6s;pointer-events:none}
+.panel:after{content:'';position:absolute;inset:auto 0 0 0;height:70%;background:linear-gradient(0deg,var(--c,#00e5ff),transparent);opacity:.1;transition:opacity .6s;pointer-events:none}
+.panel.on{flex:3.2;border-color:var(--c)}.panel.on:before{opacity:.32}.panel.on:after{opacity:.26}
+.panel>*{position:relative;z-index:1}
+.panel .pn{position:absolute;top:24px;left:26px;font:900 15px Montserrat,sans-serif;color:var(--c);letter-spacing:.08em}
+.panel svg{position:absolute;top:22px;right:22px;width:30px;height:30px;fill:none;stroke:var(--c);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:transform .7s var(--ease)}
+.panel.on svg{transform:scale(1.5) translate(-8px,8px)}
+.panel b{display:block;font:800 clamp(20px,2vw,28px)/1.1 Montserrat,sans-serif;letter-spacing:-.03em;white-space:nowrap}
+.panel p{color:var(--muted);font-size:14px;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s var(--ease),opacity .4s,margin .6s}
+.panel.on p{max-height:80px;opacity:1;margin-top:8px}
+.panel:not(.on) b{writing-mode:vertical-rl;rotate:180deg;font-size:20px}
+/* ===== Especificações: fotos reais + ficha em blocos ===== */
+.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:56px}
+.photo{margin:0;border-radius:22px;background:radial-gradient(circle at 50% 40%,#fff 55%,#eef1f8);border:1px solid var(--line);aspect-ratio:4/5;padding:14px;overflow:hidden;box-shadow:0 26px 50px -30px var(--shadow);transition:transform .5s var(--ease)}
+.photo img{width:100%;height:100%;object-fit:contain;transition:transform .8s var(--ease)}
+.photo:hover{transform:translateY(-8px) rotate(-1.5deg)}.photo:hover img{transform:scale(1.06)}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.spec{background:var(--card);padding:22px 22px 24px;transition:background .3s}
+.spec:hover{background:var(--card2)}
+.spec span{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:10px}
+.spec b{font:800 19px/1.25 Montserrat,sans-serif;letter-spacing:-.02em}
+.spec.big{grid-column:span 2}.spec.big b{font-size:26px}
+.spec.acc b{color:var(--acc)}
+.note{margin-top:18px;font-size:12px;line-height:1.75;color:var(--muted);max-width:900px}
+.smallnote{font-size:12px;color:var(--muted);margin:-40px 0 56px}
+/* ===== Como funciona: linha do tempo central ===== */
+.flow{position:relative;max-width:980px;margin:0 auto}
+.flow-line{position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--line)}
+.flow-line i{position:absolute;inset:0;background:linear-gradient(var(--cyan),var(--violet));transform-origin:top;transform:scaleY(var(--fp,0))}
+.fstep{position:relative;width:50%;padding:0 60px 70px 0;text-align:right}
+.fstep:nth-child(odd){margin-left:50%;padding:0 0 70px 60px;text-align:left}
+.fstep:last-child{padding-bottom:0}
+.fstep .node{position:absolute;top:2px;right:-17px;width:34px;height:34px;border-radius:50%;background:var(--bg);border:2px solid var(--line);display:grid;place-items:center;font:800 12px Montserrat,sans-serif;color:var(--muted);transition:border-color .5s,color .5s,box-shadow .5s,background .5s}
+.fstep:nth-child(odd) .node{right:auto;left:-17px}
+.fstep.lit .node{border-color:var(--cyan);color:#00131a;background:var(--cyan);box-shadow:0 0 0 6px #00e5ff26}
+.fstep h3{font-size:clamp(22px,2.4vw,30px);margin-bottom:10px}.fstep p{color:var(--muted)}
+/* ===== Dúvidas ===== */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.faq-side{position:sticky;top:120px}.faq-side h2{margin:14px 0 22px}
+.ask{margin-top:26px;padding:22px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+.ask b{display:block;font:800 17px Montserrat,sans-serif}.ask p{font-size:14px;color:var(--muted);margin:6px 0 16px}
+.faq details{margin-bottom:12px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:border-color .4s}
+.faq details[open]{border-color:#00e5ff55}
+.faq summary{padding:22px 24px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px}.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:'';flex:0 0 12px;height:12px;background:radial-gradient(circle,var(--acc) 1.6px,transparent 2.2px) 0 0/4px 4px;transition:rotate .4s var(--ease),scale .4s}
+.faq details[open] summary:after{rotate:45deg;scale:1.4}
+.faq p{padding:0 24px 22px;color:var(--muted);font-size:14.5px}
+/* ===== Contato: letreiro de LED ===== */
+.sign{position:relative;overflow:hidden;background:var(--ink-night);color:#fff;padding:110px 0 120px;isolation:isolate}
+.sign:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0,#4b008277,transparent 60%),radial-gradient(ellipse at 50% 110%,#00e5ff33,transparent 55%)}
+.marquee{overflow:hidden;margin-bottom:60px}
+.marquee-track{display:flex;width:max-content;animation:tick 26s linear infinite;will-change:transform}
+.marquee span{padding-right:60px;font:900 clamp(64px,11vw,170px)/1 Montserrat,sans-serif;letter-spacing:-.04em;text-transform:uppercase;white-space:nowrap;color:transparent;background:radial-gradient(circle,#00e5ff 44%,transparent 52%) 0 0/9px 9px;-webkit-background-clip:text;background-clip:text}
+.marquee span:nth-child(even){background-image:radial-gradient(circle,#c07bff 44%,transparent 52%)}
+.sign-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.sign h2{font-size:clamp(30px,3.8vw,54px)}.sign .lead{color:#c5d1e4;margin-top:18px}
+.sign .kicker{color:var(--cyan)}.sign .hl{background-image:linear-gradient(100deg,var(--cyan),var(--violet) 70%,var(--magenta))}
+.cards{display:grid;gap:12px}
+.ccard{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:22px;background:#0c0f1e;border:1px solid #ffffff1f;transition:transform .45s var(--ease),border-color .4s,background .4s}
+.ccard:hover{transform:translateX(8px);border-color:var(--cyan);background:#10142a}
+.ccard .ic{width:52px;height:52px;flex:0 0 52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(140deg,#00b8d4,#4b0082 70%)}
+.ccard .ic svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ccard small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9fb0c8;font-weight:700}.ccard b{font:800 19px Montserrat,sans-serif;letter-spacing:-.02em;word-break:break-word}
+.ccard .go{margin-left:auto;color:var(--cyan);font-size:20px;transition:transform .4s var(--ease)}.ccard:hover .go{transform:translate(3px,-3px)}
+.ccard.wa{background:linear-gradient(120deg,#00e5ff,#38f0ff);color:#00131a;border-color:transparent}.ccard.wa small{color:#00495a}.ccard.wa .go{color:#00131a}.ccard.wa .ic{background:#00131a}
+.foot{background:#020309;color:#93a0b6;padding:40px 0;font-size:13px;border-top:1px solid #ffffff12}
+.footgrid{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.footgrid img{height:44px;width:auto}
 .footlinks{display:flex;gap:18px;flex-wrap:wrap}.footlinks a:hover{color:var(--cyan)}
-.sticky-call{position:fixed;z-index:45;right:20px;bottom:20px;display:flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:var(--cyan);color:#001118;font-weight:800;font-size:13px;box-shadow:0 14px 34px -8px #00e5ffaa;transform:translateY(140%);opacity:0;transition:transform .6s var(--ease),opacity .4s}
-.sticky-call.show{transform:none;opacity:1}
+.sticky-call{position:fixed;z-index:55;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--cyan);color:#00131a;box-shadow:0 14px 34px -8px #00e5ffaa;transform:scale(0);transition:transform .6s var(--ease-bounce)}
+.sticky-call.show{transform:none}.sticky-call svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.sticky-call:before{content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--cyan);opacity:0;animation:ring 2.4s ease-out infinite}@keyframes ring{0%{opacity:.8;scale:.85}100%{opacity:0;scale:1.35}}
 /* ===== Responsivo ===== */
-@media(max-width:980px){.hx-wall{width:100%;right:-40%}.hx-grid{grid-template-columns:1fr 280px}.applications{grid-template-columns:repeat(3,1fr)}.navlinks{gap:14px}.navlinks a:not(.btn){font-size:12px}.gallery,.spec-grid{grid-template-columns:1fr}.specintro{position:static}.cta-band-inner{grid-template-columns:1fr;text-align:center;justify-items:center}.cta-band-brand{border:0;padding:0}}
-@media(max-width:820px){.navlinks{display:none;position:absolute;left:0;right:0;top:100%;padding:22px 25px 26px;flex-direction:column;align-items:stretch;background:var(--night);border-bottom:1px solid #ffffff22}.navlinks.open{display:flex;animation:menuIn .5s var(--ease)}.nav-underline{display:none}.menu{display:block}.navlinks a:not(.btn){font-size:15px}}
-@keyframes menuIn{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
-@media(max-width:740px){.nav{min-height:68px;gap:12px}.brandmark,.is-scrolled .brandmark{height:40px}.hx{min-height:auto;padding-top:46px}.hx-grid{grid-template-columns:1fr}.hx-wall{width:160%;right:-70%;top:-5%;opacity:.5}.hx-veil{background:linear-gradient(180deg,#03040ce0,#03040cb0 50%,#03040c)}.hx-title{font-size:clamp(38px,11.5vw,56px)}.hx .lead{font-size:16px}.hx-product{height:420px}.hx-tag{right:0;top:8%}.statbar{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #ffffff17}.stat{padding:20px}.section{padding:76px 0}.valuegrid,.timeline{grid-template-columns:1fr}.timeline:before{display:none}.value{min-height:auto}.sectionhead{align-items:start;flex-direction:column}.applications{grid-template-columns:repeat(2,1fr)}.applications>:last-child{grid-column:1/-1;min-height:auto}.specintro img{height:250px}.thumbs{gap:8px}.footgrid{flex-direction:column;align-items:start}.sticky-call{left:16px;right:16px;justify-content:center}}
-@media(max-width:440px){.container{padding:0 18px}.actions .btn{width:100%}.appcard{padding:16px;min-height:170px}.spec-row{grid-template-columns:1fr;gap:4px}.filters{display:flex;flex-wrap:nowrap;overflow-x:auto;border-radius:16px}.filters button{white-space:nowrap}.contact-card{width:100%}}
-/* ===== Revelação ao rolar: um efeito por seção ===== */
-.motion :is(.hx .pill,.hx .lead,.hx .actions,.trust,.hx-product,.statbar,.sectionhead .eyebrow,.sectionhead .lead,.valuegrid>*,.gallery-text>.eyebrow,.gallery-text>.lead,.filters,.stage,.thumbs,.gallery-text>.smallnote,.gallery-text>.actions,.applications>*,.specintro>:not(h2),.spec-table,.spec-grid .note,.timeline>*,.cta-band-inner>*,.faq details,.contact .eyebrow,.contact .lead,.contact .actions,.contact-cards){opacity:0;translate:0 36px;transition:opacity .9s var(--ease),translate .9s var(--ease),scale .9s var(--ease),rotate 1s var(--ease),filter .9s var(--ease),clip-path 1.1s var(--ease),transform .45s var(--ease),box-shadow .45s var(--ease);transition-delay:var(--d,0s),var(--d,0s),var(--d,0s),var(--d,0s),var(--d,0s),var(--d,0s),0s,0s}
-.motion :is(.hx .pill,.hx .lead,.hx .actions,.trust,.hx-product,.statbar,.sectionhead .eyebrow,.sectionhead .lead,.valuegrid>*,.gallery-text>.eyebrow,.gallery-text>.lead,.filters,.stage,.thumbs,.gallery-text>.smallnote,.gallery-text>.actions,.applications>*,.specintro>:not(h2),.spec-table,.spec-grid .note,.timeline>*,.cta-band-inner>*,.faq details,.contact .eyebrow,.contact .lead,.contact .actions,.contact-cards).in{opacity:1;translate:none;scale:none;rotate:none;filter:none}
-/* hero: produto sobe de longe e acende */
-.motion .hx-product:not(.in){translate:0 80px;scale:.9;filter:brightness(.2)}
-/* solução: cards giram em 3D de baixo */
-.motion .valuegrid{perspective:1000px}.valuegrid>*{transform-origin:50% 100%}
-.motion .valuegrid>:not(.in){translate:0 30px;rotate:x 70deg}
-/* produto: filtros deslizam, palco abre como cortina, miniaturas em onda */
-.motion .filters:not(.in){translate:-50px 0}
-.motion .stage{clip-path:inset(-80px round 26px)}
-.motion .stage:not(.in){opacity:1;translate:none;clip-path:inset(0 100% 0 0 round 26px)}
-.motion .thumbs:not(.in){opacity:1;translate:none}
-.motion .thumbs .thumb{transition-delay:0s,0s,calc(var(--w,0)*80ms + .3s),calc(var(--w,0)*80ms + .3s)}
-.motion .thumbs:not(.in) .thumb{opacity:0;scale:.6}
-/* aplicações: desfoque e ícones girando */
-.motion .applications>:not(.in){translate:none;scale:.9;filter:blur(12px)}
-.motion .applications>:not(.in) i{rotate:-180deg;scale:0}
-/* especificações: texto da esquerda, tabela em 3D */
-.motion .spec-grid{perspective:1400px}
-.motion .specintro>:not(h2):not(.in){translate:-60px 0}
-.motion .spec-table:not(.in){translate:80px 0;rotate:y -30deg}
-/* passo a passo: cai com quique depois da linha */
-.motion .timeline>*{transition-timing-function:var(--ease-bounce)}
-.motion .timeline>:not(.in){translate:0 -60px}
-/* faixa: logo aproxima, frase revelada, botão sobe */
-.motion .cta-band-brand:not(.in){translate:none;scale:1.4;filter:blur(10px)}
-.motion .cta-band p{clip-path:inset(-30px)}
-.motion .cta-band p:not(.in){opacity:1;translate:none;clip-path:inset(0 100% 0 0)}
-.motion .cta-band-inner .btn:not(.in){translate:0 50px}
-/* dúvidas: pela direita */
-.motion .faq details:not(.in){translate:70px 0}
-/* contato: crescem com quique */
-.motion .contact :is(.actions,.contact-cards){transition-timing-function:var(--ease-bounce)}
-.motion .contact :is(.actions,.contact-cards):not(.in){translate:none;scale:.8}
-/* títulos em máscara */
-.split-mask{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
-.split-word{display:inline-block;transform-origin:0 100%;transition:transform 1s var(--ease),opacity .9s var(--ease),filter .9s var(--ease);transition-delay:calc(var(--d,0s) + var(--i,0)*.07s)}
-.split-word.gradient{padding-right:.04em}
-.motion .section h2:not(.split-ready),.motion .cta-band h2:not(.split-ready){visibility:hidden}
-.motion .split-ready:not(.in) .split-word{transform:translateY(110%) rotate(4deg)}
-.motion .split-ready[data-split=blur]:not(.in) .split-word{transform:none;opacity:0;filter:blur(14px)}
-.motion .split-ready[data-split=drop]:not(.in) .split-word{transform:translateY(-110%)}
-.motion .split-ready[data-split=slide]:not(.in) .split-word{transform:translateX(-105%)}
-.split-ready[data-split=flip] .split-word{transform-origin:50% 100%}
-.motion .split-ready[data-split=flip]:not(.in) .split-word{transform:perspective(400px) rotateX(-95deg);opacity:0}
-.split-ready[data-split=zoom] .split-word{transform-origin:50% 60%}
-.motion .split-ready[data-split=zoom]:not(.in) .split-word{transform:scale(.3);opacity:0}
-/* hero: entrada do título e da parede */
-.motion .hx-line>span{transform:translateY(110%);animation:lineUp 1.1s var(--ease) forwards;animation-delay:calc(var(--intro,0s) + .35s + var(--l,0)*.12s)}
-.hx-line:nth-child(2){--l:1}.hx-line:nth-child(3){--l:2}.hx-line:nth-child(4){--l:3}
-@keyframes lineUp{to{transform:none}}
-.motion .hx-wall-inner{animation:wallIn 2s var(--ease) backwards;animation-delay:var(--intro,0s)}
-@keyframes wallIn{from{opacity:0;transform:rotateY(-50deg) rotateX(25deg) rotateZ(5deg) translateZ(-300px)}}
-/* abertura: painel de LED ligando (uma vez por sessão) */
-html.intro{--intro:.85s}
-html.intro body:before,html.intro body:after{content:'';position:fixed;z-index:9999;pointer-events:none}
-html.intro body:before{inset:0;background:#01030a;animation:tvOpen .7s cubic-bezier(.7,0,.2,1) .45s forwards}
-html.intro body:after{left:0;right:0;top:50%;height:2px;margin-top:-1px;background:#fff;box-shadow:0 0 30px 6px #00e5ff,0 0 80px 20px #9d35eb;transform:scaleX(0);animation:tvLine .5s var(--ease) forwards,tvFade .5s ease .55s forwards}
-@keyframes tvLine{to{transform:scaleX(1)}}@keyframes tvFade{to{opacity:0;transform:scaleX(1) scaleY(40)}}
-@keyframes tvOpen{to{clip-path:inset(50% 0 50% 0);visibility:hidden}}
+@media(max-width:1100px){.navlinks a:not(.btn){padding:8px 9px;font-size:12px}.bento{grid-template-columns:repeat(2,1fr)}.t-hero{grid-column:span 2}.specs{grid-template-columns:repeat(2,1fr)}.photos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.navlinks{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);padding:16px;flex-direction:column;align-items:stretch;border-radius:24px;background:#03040cf5;border:1px solid #ffffff22}.navlinks.open{display:flex;animation:menuIn .5s var(--ease)}.navlinks .btn{margin:8px 0 0}.navlinks a:not(.btn){font-size:15px;padding:12px 14px}.menu{display:block}.nav{position:relative}
+.head,.led-grid,.faq-grid,.sign-grid{grid-template-columns:1fr}.head{gap:16px}.faq-side{position:static}
+.story-grid{grid-template-columns:1fr;gap:0}.stage{top:70px;height:auto;padding:18px 0 34px;z-index:2;background:linear-gradient(var(--bg2) 82%,transparent);order:-1}.totem{height:min(40vh,330px)}.co1{left:-30px}.co1 .co-pill{right:10px}.co2{right:-50px;width:88px;height:88px}.co3{right:-80px;scale:.85}.stage[data-step="3"] .co3{scale:.85}.dots{left:-56px}
+.chapter{min-height:62vh}.panels{flex-direction:column;height:auto}.panel{min-height:90px;padding:22px 22px 22px 70px}.panel .pn{top:24px;left:22px}.panel.on{min-height:170px}.panel:not(.on) b{writing-mode:horizontal-tb;rotate:none}.panel.on svg{transform:scale(1.25)}}
+@keyframes menuIn{from{clip-path:inset(0 0 100% 0 round 24px)}to{clip-path:inset(0 0 0 0 round 24px)}}
+@media(max-width:640px){.container{padding:0 18px}.navshell{top:10px;padding:0 10px}.nav{padding:6px 6px 6px 14px;gap:8px}.brandmark{height:36px}.section{padding:84px 0}
+.led-hud{top:80px;right:12px}.hud-hint{display:none}.hud-scenes button{width:30px;height:30px}.led-copy{padding-bottom:40px}.led-meta{gap:14px 24px}.led-meta b{font-size:18px}.led h1{font-size:clamp(40px,12.5vw,60px)}
+.bento{grid-template-columns:1fr}.t-hero,.t-wide{grid-column:auto}.t-hero{min-height:460px;justify-content:flex-end}.t-hero>img{height:56%;top:70px;right:4%}.t-hero h3,.t-hero p{max-width:100%}
+.specs{grid-template-columns:1fr 1fr}.spec.big{grid-column:span 2}.spec{padding:18px}.spec b{font-size:16px}.photos{gap:10px}
+.flow-line{left:17px}.fstep,.fstep:nth-child(odd){width:auto;margin-left:0;padding:0 0 50px 58px;text-align:left}.fstep .node,.fstep:nth-child(odd) .node{left:0;right:auto}
+.led-side .btn{flex:1 1 100%}.ask .btn{width:100%}.sticky-call{right:14px;bottom:14px}.ccard{padding:16px}.ccard b{font-size:16px}.marquee{margin-bottom:40px}}
+/* ===== Revelação: um efeito por seção (diferente do MMI TV) ===== */
+.motion :is(.led-side,.led-meta,.head .kicker,.head .lead,.tile,.chapter .num,.panel,.photo,.note,.fstep,.faq-side>:not(h2),.faq details,.sign-grid>div:first-child>:not(h2),.ccard){opacity:0;transition:opacity .9s var(--ease),translate .9s var(--ease),scale .9s var(--ease),rotate 1s var(--ease),transform .5s var(--ease),flex .7s var(--ease),border-color .4s,background .4s;transition-delay:var(--d,0s),var(--d,0s),var(--d,0s),var(--d,0s),0s,0s,0s,0s}
+.motion :is(.led-side,.led-meta,.head .kicker,.head .lead,.tile,.chapter .num,.panel,.photo,.note,.fstep,.faq-side>:not(h2),.faq details,.sign-grid>div:first-child>:not(h2),.ccard).in{opacity:1;translate:none;scale:none;rotate:none}
+.motion :is(.led-side,.led-meta,.head .kicker,.head .lead,.note,.faq-side>:not(h2),.sign-grid>div:first-child>:not(h2),.chapter .num):not(.in){translate:0 30px}
+/* bento: cada bloco "liga" como um módulo de LED (flash de brilho, uma vez) */
+.motion .tile:not(.in){scale:.94}
+.motion .tile.in{animation:powerOn 1.1s var(--ease) var(--d,0s) backwards}
+@keyframes powerOn{0%{filter:brightness(0)}35%{filter:brightness(1.9) saturate(1.3)}55%{filter:brightness(.7)}70%{filter:brightness(1.4)}100%{filter:none}}
+/* aplicações: painéis sobem como barras de equalizador */
+.motion .panel{transform-origin:50% 100%}
+.motion .panel:not(.in){scale:1 .2;translate:0 40px}
+/* fotos: cartas distribuídas na mesa */
+.motion .photo:not(.in){translate:0 120px;rotate:-14deg;scale:.85}
+.motion .photo:nth-child(even):not(.in){rotate:14deg}
+/* ficha: varredura de cima para baixo (observa o pai) */
+.motion .specs{clip-path:inset(-2px round 24px);transition:clip-path 1.4s var(--ease) .1s}
+.motion .specs:not(.in){clip-path:inset(0 0 100% 0 round 24px)}
+/* linha do tempo: passos vêm do lado da linha */
+.motion .fstep:not(.in){translate:-60px 0}.motion .fstep:nth-child(odd):not(.in){translate:60px 0}
+/* dúvidas: sobem com quique */
+.motion .faq details{transition-timing-function:var(--ease-bounce)}.motion .faq details:not(.in){translate:0 50px;scale:.96}
+/* contato: cartões entram pela direita, em degraus */
+.motion .ccard:not(.in){translate:120px 0}
+/* títulos: palavras acendem como LED, com variações por seção */
+.w{display:inline-block}
+.motion main h2:not(.lit-ready){visibility:hidden}
+.motion .lit-ready:not(.in) .w{opacity:0}
+.motion .lit-ready.in .w{animation:flicker .9s steps(1) both;animation-delay:calc(var(--d,0s) + var(--i,0)*.08s)}
+@keyframes flicker{0%{opacity:0}10%{opacity:.9}20%{opacity:.1}32%{opacity:1}44%{opacity:.35}56%,100%{opacity:1}}
+.motion .lit-ready[data-fx=scan].in .w{animation:scanIn .8s var(--ease) both;animation-delay:calc(var(--d,0s) + var(--i,0)*.07s)}
+@keyframes scanIn{from{clip-path:inset(0 0 100% 0);opacity:1;translate:0 -12px}to{clip-path:inset(-20% -10% -20% -10%);opacity:1}}
+.motion .lit-ready[data-fx=glitch].in .w{animation:glitch .7s steps(6) both;animation-delay:calc(var(--d,0s) + var(--i,0)*.06s)}
+@keyframes glitch{0%{opacity:0;translate:-14px 0}30%{opacity:1;translate:10px 0}60%{translate:-4px 0}100%{opacity:1;translate:none}}
+.motion .lit-ready[data-fx=zoom].in .w{animation:zoomW .9s var(--ease) both;animation-delay:calc(var(--d,0s) + var(--i,0)*.07s)}
+@keyframes zoomW{from{opacity:0;scale:1.8}to{opacity:1;scale:1}}
+/* hero: título sobe por linha depois do painel ligar */
+.motion .led h1 .row>span{transform:translateY(110%);animation:rowUp 1.1s var(--ease) forwards;animation-delay:calc(1s + var(--r,0)*.12s)}
+.led h1 .row:nth-child(2){--r:1}.led h1 .row:nth-child(3){--r:2}
+@keyframes rowUp{to{transform:none}}
+.motion .led-hud{animation:hudIn 1s var(--ease) 1.4s backwards}@keyframes hudIn{from{opacity:0;translate:30px 0}}
 /* loops pausados fora da tela */
-.hx-off :is(.hx-track,.hx-word,.hx-screen:before,.hx-product img,.dot,.primary:before){animation-play-state:paused!important}
+.off,.off *{animation-play-state:paused!important}
 ::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.hx-track{animation:none!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.ticker-track,.marquee-track{animation:none!important}}
 </style>
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-<header class="navshell" id="top"><div class="container nav">
+<header class="navshell"><div class="nav">
 <a href="#inicio" class="brand" aria-label="MídiaLed Indoor — início"><img class="brandmark" src="assets/marca-aprovada.webp" alt="MídiaLed Indoor" width="680" height="179"></a>
-<nav id="navlinks" class="navlinks" aria-label="Navegação principal"><a href="#solucao">Solução</a><a href="#produto">Produto</a><a href="#aplicacoes">Aplicações</a><a href="#especificacoes">Especificações</a><a href="#duvidas">Dúvidas</a><a class="btn primary" href="#contato">Solicitar apresentação ↗</a></nav>
+<nav id="navlinks" class="navlinks" aria-label="Navegação principal"><a href="#solucao">Solução</a><a href="#produto">Produto</a><a href="#aplicacoes">Aplicações</a><a href="#especificacoes">Especificações</a><a href="#duvidas">Dúvidas</a><a class="btn b-cyan" href="#contato">Solicitar apresentação ↗</a></nav>
 <button class="theme-toggle" id="themeBtn" type="button" aria-label="Alternar tema"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
 <button class="menu" id="toggle" aria-controls="navlinks" aria-expanded="false" aria-label="Abrir menu">☰</button>
-</div><span class="progress" aria-hidden="true"></span></header>
+</div></header>
 <main id="conteudo">
-<section id="inicio" class="hx">
-<div class="hx-glow" aria-hidden="true"></div>
-<div class="hx-wall" aria-hidden="true"><div class="hx-wall-inner">
-<div class="hx-col"><div class="hx-track"><div class="hx-screen"><img src="assets/telas/rosto.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/pontos.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/laranja.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/rosto.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/pontos.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/laranja.webp" alt="" width="360" height="640"></div></div></div>
-<div class="hx-col"><div class="hx-track"><div class="hx-screen"><img src="assets/telas/shopping.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/celular.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/plumas.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/shopping.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/celular.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/plumas.webp" alt="" width="360" height="640"></div></div></div>
-<div class="hx-col"><div class="hx-track"><div class="hx-screen"><img src="assets/telas/retrato.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/laranja.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/rosto.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/retrato.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/laranja.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/rosto.webp" alt="" width="360" height="640"></div></div></div>
-<div class="hx-col"><div class="hx-track"><div class="hx-screen"><img src="assets/telas/plumas.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/shopping.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/pontos.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/plumas.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/shopping.webp" alt="" width="360" height="640"></div><div class="hx-screen"><img src="assets/telas/pontos.webp" alt="" width="360" height="640"></div></div></div>
-</div></div>
-<div class="hx-veil" aria-hidden="true"></div><div class="hx-spot" aria-hidden="true"></div>
-<div class="container hx-grid"><div class="hx-copy">
-<span class="pill"><span class="dot"></span> Nova dimensão de mídia indoor</span>
-<h1 class="hx-title" aria-label="Seu espaço, uma nova forma de impressionar."><span class="hx-line" aria-hidden="true"><span>Seu espaço,</span></span><span class="hx-line" aria-hidden="true"><span>uma nova forma</span></span><span class="hx-line" aria-hidden="true"><span>de impressionar</span></span><span class="hx-line" aria-hidden="true"><span><span class="hx-rot"><span class="hx-word">na sua loja.</span></span></span></span></h1>
-<p class="lead">Uma tela que atrai olhares. Uma experiência que valoriza sua marca. Conheça o Totem LED P2.9 Indoor — presença digital de alto impacto para negócios que querem ser vistos.</p>
-<div class="actions"><a href="#produto" class="btn primary">Conheça o Totem LED ↗</a><a href="#contato" class="btn secondary">Solicitar apresentação</a></div>
-<div class="trust"><span><b>✦</b> Tela vertical</span><span><b>✦</b> Comunicação dinâmica</span><span><b>✦</b> Ambientes internos</span></div>
-</div>
-<div class="hx-product"><img src="assets/totem-recorte.webp" width="480" height="1042" alt="Totem LED vertical MídiaLed Indoor, com imagem publicitária em tons de azul e roxo" fetchpriority="high"><span class="hx-tag"><i></i>Totem LED P2.9 · Indoor</span></div>
-</div>
-<div class="container"><div class="statbar"><div class="stat"><b>P2.9</b><small>Tecnologia LED</small></div><div class="stat"><b>1,99 m</b><small>Altura informada</small></div><div class="stat"><b>65 cm</b><small>Largura informada</small></div><div class="stat"><b>Wi-Fi</b><small>Gestão e atualização</small></div></div></div>
+<!-- HERO: a página inteira vira um painel de LED -->
+<section id="inicio" class="led" aria-label="Apresentação">
+<canvas id="ledCanvas" aria-hidden="true"></canvas><div class="led-dots" aria-hidden="true"></div><div class="led-fade" aria-hidden="true"></div>
+<div class="led-hud"><span class="hud-live"><i></i>Ao vivo · <b id="sceneName">Ondas de luz</b></span><div class="hud-scenes" role="group" aria-label="Trocar o conteúdo do painel"><button type="button" aria-pressed="true" data-s="0" aria-label="Cena 1: ondas de luz">01</button><button type="button" aria-pressed="false" data-s="1" aria-label="Cena 2: mensagem rolando">02</button><button type="button" aria-pressed="false" data-s="2" aria-label="Cena 3: campanha">03</button><button type="button" aria-pressed="false" data-s="3" aria-label="Cena 4: equalizador">04</button></div><span class="hud-hint">Toque no painel ✦ você controla a luz</span></div>
+<div class="led-copy"><div class="container led-grid">
+<h1 aria-label="Seu espaço, uma nova forma de impressionar."><span class="row" aria-hidden="true"><span>Seu espaço,</span></span><span class="row" aria-hidden="true"><span>uma nova forma de</span></span><span class="row" aria-hidden="true"><span class="glow">impressionar.</span></span></h1>
+<div class="led-side"><p class="lead">Uma tela que atrai olhares. Uma experiência que valoriza sua marca. Conheça o Totem LED P2.9 Indoor — presença digital de alto impacto para negócios que querem ser vistos.</p><div class="actions"><a href="#produto" class="btn b-cyan">Conheça o Totem LED ↗</a><a href="#contato" class="btn b-ghost">Solicitar apresentação</a></div></div>
+</div><div class="container"><div class="led-meta"><span><b>P2.9</b>Tecnologia LED</span><span><b>1,99 m</b>Altura informada</span><span><b>65 cm</b>Largura informada</span><span><b>Wi-Fi</b>Gestão e atualização</span></div></div></div>
 </section>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Impacto visual <i></i> Tela vertical <i></i> Comunicação dinâmica <i></i> USB · HDMI · Wi-Fi <i></i> Sistema NovaStar <i></i> Ambientes internos <i></i></span><span>Impacto visual <i></i> Tela vertical <i></i> Comunicação dinâmica <i></i> USB · HDMI · Wi-Fi <i></i> Sistema NovaStar <i></i> Ambientes internos <i></i></span></div></div>
 
-<section class="section" id="solucao"><div class="container"><div class="sectionhead"><div><span class="eyebrow">A comunicação ganha presença</span><h2>Não é apenas uma tela. <span class="gradient">É o centro das atenções.</span></h2></div><p class="lead">Da primeira impressão à decisão de compra, o LED transforma informação em uma experiência visual viva.</p></div>
-<div class="valuegrid">
-<article class="value"><span class="n" aria-hidden="true">01</span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><h3>Impacto visual</h3><p>Imagens vibrantes e presença marcante para destacar campanhas, lançamentos e ofertas.</p></article>
-<article class="value"><span class="n" aria-hidden="true">02</span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="16" rx="1.5"/><path d="M9 21.5h6M12 18.5v3"/></svg></span><h3>Formato que valoriza</h3><p>Design vertical elegante com base móvel, criado para se integrar a diferentes ambientes.</p></article>
-<article class="value"><span class="n" aria-hidden="true">03</span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></svg></span><h3>Conteúdo inteligente</h3><p>Atualize campanhas e informações com conectividade USB, HDMI ou Wi-Fi e sistema NovaStar.</p></article>
+<section class="section" id="solucao"><div class="container">
+<div class="head"><div><span class="kicker">A comunicação ganha presença</span><h2>Não é apenas uma tela. <span class="hl">É o centro das atenções.</span></h2></div><p class="lead">Da primeira impressão à decisão de compra, o LED transforma informação em uma experiência visual viva.</p></div>
+<div class="bento">
+<article class="tile t-hero"><span class="t-tag">Impacto visual</span><img src="assets/totem-recorte.webp" alt="" width="480" height="1042" loading="lazy"><h3>Imagens vibrantes. Presença marcante.</h3><p>Destaque campanhas, lançamentos e ofertas com uma tela que ninguém consegue ignorar.</p></article>
+<article class="tile t-wide"><div class="ruler"><div><small>Altura</small><b>1,99 m</b></div><span class="x">×</span><div><small>Largura</small><b>65 cm</b></div></div><h3>Formato que valoriza</h3><p>Design vertical elegante com base móvel, criado para se integrar a diferentes ambientes.</p></article>
+<article class="tile t-pitch"><b>P2.9</b><h3>Tecnologia LED</h3><p>Pixels próximos para imagem nítida em ambientes internos.</p></article>
+<article class="tile"><div class="chips"><span>Wi-Fi</span><span>USB</span><span>HDMI</span><span>NovaStar</span></div><h3>Conteúdo inteligente</h3><p>Atualize campanhas e informações com conectividade USB, HDMI ou Wi-Fi e sistema NovaStar.</p></article>
 </div></div></section>
 
-<section class="section showcase" id="produto"><div class="container gallery">
-<figure class="stage" tabindex="0" aria-label="Galeria do Totem LED. Use as setas para navegar.">
-<div class="stage-media"><span class="stage-cat" id="stageCat">Frente</span><img id="stageImg" src="assets/totem-neon.webp" alt="Totem LED exibindo publicidade de beleza" width="648" height="1536">
-<div class="stage-ctrl"><button class="stage-prev" type="button" aria-label="Imagem anterior">←</button><span class="stage-count"><b id="stageNum">01</b> / <span id="stageTotal">04</span></span><button class="stage-next" type="button" aria-label="Próxima imagem">→</button></div>
-<div class="stage-progress" aria-hidden="true"><span></span></div></div>
-<figcaption class="stage-info"><h3 id="stageTitle">Vista frontal</h3><p id="stageDesc">Tela vertical de ponta a ponta para campanhas que precisam ser vistas de longe.</p></figcaption>
-</figure>
-<div class="gallery-text"><span class="eyebrow">Produto em destaque</span><h2>Totem LED <span class="gradient">P2.9 Indoor.</span></h2><p class="lead">Uma solução versátil para mostrar vídeos, animações, campanhas e mensagens institucionais com apresentação sofisticada. Estrutura vertical com rodízios para facilitar o posicionamento no ambiente.</p>
-<div class="filters" role="group" aria-label="Filtrar imagens"><span class="f-pill" aria-hidden="true"></span><button type="button" class="is-active" aria-pressed="true" data-cat="all">Todas</button><button type="button" aria-pressed="false" data-cat="frente">Frente</button><button type="button" aria-pressed="false" data-cat="verso">Frente e verso</button></div>
-<div class="thumbs">
-<button type="button" class="thumb is-active" aria-current="true" data-i="0" data-cat="frente" data-img="assets/totem-neon.webp" data-name="Vista frontal" data-desc="Tela vertical de ponta a ponta para campanhas que precisam ser vistas de longe." aria-label="Ver totem frontal"><img src="assets/totem-neon.webp" alt="" loading="lazy" width="648" height="1536"></button>
-<button type="button" class="thumb" data-i="1" data-cat="verso" data-img="assets/totem-duplo.webp" data-name="Frente e verso" data-desc="Acabamento traseiro limpo e base com rodízios para mudar o totem de lugar quando quiser." aria-label="Ver frente e verso"><img src="assets/totem-duplo.webp" alt="" loading="lazy" width="1536" height="1536"></button>
-<button type="button" class="thumb" data-i="2" data-cat="frente" data-img="assets/totem-retrato.webp" data-name="Campanha em destaque" data-desc="Cores vivas e alto contraste para valorizar retratos, produtos e lançamentos." aria-label="Ver totem com retrato"><img src="assets/totem-retrato.webp" alt="" loading="lazy" width="1536" height="1536"></button>
-<button type="button" class="thumb" data-i="3" data-cat="verso" data-img="assets/totem-laranja.webp" data-name="Estrutura e base" data-desc="Estrutura vertical com pés de apoio e traseira ventilada para operação contínua." aria-label="Ver totem laranja"><img src="assets/totem-laranja.webp" alt="" loading="lazy" width="1536" height="1536"></button>
+<section class="section story" id="produto"><div class="container">
+<div class="head"><div><span class="kicker">Produto em destaque</span><h2>Totem LED <span class="hl">P2.9 Indoor.</span></h2></div><p class="lead">Uma solução versátil para mostrar vídeos, animações, campanhas e mensagens institucionais com apresentação sofisticada.</p></div>
+<div class="story-grid">
+<div class="chapters">
+<article class="chapter" data-step="1"><span class="num">01 / 04</span><h3>Dois metros de presença.</h3><p>Uma tela vertical que aparece de longe e conduz o olhar do cliente até a sua mensagem.</p><ul><li>Altura total 1,99 m</li><li>Largura 65 cm</li><li>Espessura 6 cm</li></ul></article>
+<article class="chapter" data-step="2"><span class="num">02 / 04</span><h3>Imagens que vibram.</h3><p>Tecnologia LED P2.9 para vídeos, animações e campanhas com presença marcante.</p><ul><li>P2.9</li><li>650 × 2000 pixels*</li><li>Operação contínua</li></ul></article>
+<article class="chapter" data-step="3"><span class="num">03 / 04</span><h3>Atualize de onde estiver.</h3><p>Troque o conteúdo com conectividade USB, HDMI ou Wi-Fi e sistema NovaStar, com possibilidade de atualização remota.*</p><ul><li>USB</li><li>HDMI</li><li>Wi-Fi</li><li>NovaStar</li></ul></article>
+<article class="chapter" data-step="4"><span class="num">04 / 04</span><h3>Leve para onde quiser.</h3><p>Estrutura vertical com rodízios para facilitar o posicionamento no ambiente: na entrada, perto do caixa ou no centro do evento.</p><ul><li>Base de 50 cm</li><li>Rodízios</li><li>220 V</li></ul></article>
 </div>
+<div class="stage" data-step="1" aria-hidden="true"><div class="totem">
+<div class="dots"><span class="on"></span><span></span><span></span><span></span></div>
+<div class="t-screen"><img class="on" src="assets/telas/retrato.webp" alt="" width="360" height="640"><img src="assets/telas/rosto.webp" alt="" width="360" height="640"><img src="assets/telas/celular.webp" alt="" width="360" height="640"><img src="assets/telas/plumas.webp" alt="" width="360" height="640"></div>
+<div class="t-base"></div><div class="t-floor"></div>
+<div class="co co1"><span class="co-pill"><i></i>1,99 m</span></div>
+<div class="co co2"><span class="co-pill"><i></i>P2.9</span></div>
+<div class="co co3"><span class="co-pill"><i></i>Wi-Fi</span><span class="co-pill"><i></i>USB · HDMI</span><span class="co-pill"><i></i>NovaStar</span></div>
+<div class="co co4"><span class="co-pill"><i></i>Rodízios · base 50 cm</span></div>
+</div></div>
+</div></div></section>
+
+<section class="section" id="aplicacoes"><div class="container">
+<div class="head"><div><span class="kicker">Aplicações que fazem sentido</span><h2>Onde existe movimento, <span class="hl">existe oportunidade.</span></h2></div><p class="lead">Leve conteúdo relevante para o ponto certo — com uma presença visual que chama a atenção sem ocupar uma vitrine inteira.</p></div>
+<div class="panels">
+<div class="panel on" tabindex="0" style="--c:#00e5ff"><span class="pn">01</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 13h-13zM9 7a3 3 0 0 1 6 0"/></svg><b>Lojas e varejo</b><p>Campanhas e lançamentos.</p></div>
+<div class="panel" tabindex="0" style="--c:#9d35eb"><span class="pn">02</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12M8 21v-7h8v7M3 21h18"/></svg><b>Shoppings</b><p>Ativações e divulgações.</p></div>
+<div class="panel" tabindex="0" style="--c:#38f0ff"><span class="pn">03</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg><b>Clínicas</b><p>Conteúdo informativo.</p></div>
+<div class="panel" tabindex="0" style="--c:#d24bff"><span class="pn">04</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.5 6 .8-4.4 4.1 1.1 6L12 16.5 6.7 19.4l1.1-6L3.4 9.3l6-.8z"/></svg><b>Eventos e feiras</b><p>Presença memorável.</p></div>
+<div class="panel" tabindex="0" style="--c:#7c5cff"><span class="pn">05</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7zM12 22V12M21 7l-9 5-9-5"/></svg><b>Showrooms</b><p>Produtos em destaque.</p></div>
+</div></div></section>
+
+<section class="section" id="especificacoes" style="background:var(--bg2)"><div class="container">
+<div class="head"><div><span class="kicker">Tecnologia e performance</span><h2>Design que impressiona. <span class="hl">Dados que importam.</span></h2></div><p class="lead">Conheça as características fornecidas para o Totem LED Vertical Indoor P2.9.</p></div>
+<div class="photos"><figure class="photo"><img src="assets/totem-neon.webp" alt="Totem LED exibindo publicidade de beleza" loading="lazy" width="648" height="1536"></figure><figure class="photo"><img src="assets/totem-retrato.webp" alt="Totem LED vertical com publicidade em azul e roxo" loading="lazy" width="1536" height="1536"></figure><figure class="photo"><img src="assets/totem-duplo.webp" alt="Totem LED frontal e vista traseira" loading="lazy" width="1536" height="1536"></figure><figure class="photo"><img src="assets/totem-laranja.webp" alt="Totem LED com imagem laranja e vista traseira" loading="lazy" width="1536" height="1536"></figure></div>
 <p class="smallnote">Fotografias fornecidas como referência do produto. Imagens publicitárias exibidas nos equipamentos são ilustrativas.</p>
-<div class="actions"><a class="btn primary" href="#especificacoes">Ver ficha técnica ↓</a><a class="btn line" id="stageCta" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor." target="_blank" rel="noopener noreferrer">Quero no meu negócio ↗</a></div>
-</div></div></section>
-
-<section class="section" id="aplicacoes"><div class="container"><div class="sectionhead"><div><span class="eyebrow">Aplicações que fazem sentido</span><h2>Onde existe movimento, <span class="gradient">existe oportunidade.</span></h2></div><p class="lead">Leve conteúdo relevante para o ponto certo — com uma presença visual que chama a atenção sem ocupar uma vitrine inteira.</p></div>
-<div class="applications">
-<article class="appcard"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16l-1.5 13h-13zM9 7a3 3 0 0 1 6 0"/></svg></i><div><b>Lojas e varejo</b><p>Campanhas e lançamentos</p></div></article>
-<article class="appcard"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-5 9 5v12M8 21v-7h8v7M3 21h18"/></svg></i><div><b>Shoppings</b><p>Ativações e divulgações</p></div></article>
-<article class="appcard"><i aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></i><div><b>Clínicas</b><p>Conteúdo informativo</p></div></article>
-<article class="appcard"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.5 6 .8-4.4 4.1 1.1 6L12 16.5 6.7 19.4l1.1-6L3.4 9.3l6-.8z"/></svg></i><div><b>Eventos e feiras</b><p>Presença memorável</p></div></article>
-<article class="appcard"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7zM12 22V12M21 7l-9 5-9-5"/></svg></i><div><b>Showrooms</b><p>Produtos em destaque</p></div></article>
-</div></div></section>
-
-<section class="section spec" id="especificacoes"><div class="container spec-grid"><div class="specintro"><span class="eyebrow">Tecnologia e performance</span><h2>Design que impressiona. <span class="gradient">Dados que importam.</span></h2><p class="lead">Conheça as características fornecidas para o Totem LED Vertical Indoor P2.9.</p><div class="specimg"><img src="assets/totem-duplo.webp" alt="Vista frontal e traseira do totem LED" loading="lazy" width="1536" height="1536"></div></div>
-<div><div class="spec-table"><div class="spec-row"><span>Modelo</span><b>Totem LED Vertical Indoor</b></div><div class="spec-row"><span>Tecnologia</span><b>P2.9</b></div><div class="spec-row"><span>Resolução informada</span><b>650 × 2000 pixels</b></div><div class="spec-row"><span>Altura total informada</span><b>1,99 m</b></div><div class="spec-row"><span>Largura</span><b>65 cm</b></div><div class="spec-row"><span>Área de exibição informada</span><b>2,00 m × 65 cm</b></div><div class="spec-row"><span>Profundidade/base</span><b>50 cm</b></div><div class="spec-row"><span>Espessura</span><b>6 cm</b></div><div class="spec-row"><span>Conectividade</span><b>USB / HDMI / Wi-Fi</b></div><div class="spec-row"><span>Sistema</span><b>NovaStar</b></div><div class="spec-row"><span>Atualização de conteúdo</span><b>Remota e em tempo real*</b></div><div class="spec-row"><span>Alimentação</span><b>220 V</b></div><div class="spec-row"><span>Consumo informado</span><b>1,6 kVA por módulo</b></div><div class="spec-row"><span>Operação</span><b>Contínua</b></div></div><p class="note">Ficha baseada nas informações fornecidas para este modelo. Dimensões de altura total e área visível, resolução e consumo por módulo requerem confirmação no datasheet do fornecedor antes da contratação. *A atualização remota depende da configuração, conectividade e controlador instalado.</p></div></div></section>
-
-<section class="section" id="como"><div class="container"><div class="sectionhead"><div><span class="eyebrow">A sua ideia no mundo real</span><h2>Simples de imaginar. <span class="gradient">Fácil de apresentar.</span></h2></div></div>
-<div class="timeline"><article class="step"><span class="n">01</span><h3>Conte sua necessidade</h3><p>Qual ambiente receberá o totem? O que sua marca deseja comunicar?</p></article><article class="step"><span class="n">02</span><h3>Definimos a solução</h3><p>Apresentamos o formato, as opções de conteúdo e os requisitos de operação.</p></article><article class="step"><span class="n">03</span><h3>Sua comunicação ganha vida</h3><p>Com equipamento e programação definidos, a sua mensagem passa a ter presença.</p></article></div></div></section>
-
-<section class="cta-band" aria-label="Chamada"><div class="container cta-band-inner"><div class="cta-band-brand"><img src="assets/marca-aprovada.webp" alt="MídiaLed Indoor" width="680" height="179" loading="lazy"></div><p>Transforme seu espaço com o <em>poder visual do LED.</em></p><a class="btn primary" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20apresenta%C3%A7%C3%A3o%20do%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor." target="_blank" rel="noopener noreferrer">Solicitar apresentação ↗</a></div></section>
-
-<section class="section" id="duvidas"><div class="container"><div class="sectionhead"><div><span class="eyebrow">Perguntas frequentes</span><h2>Você pergunta. <span class="gradient">A gente esclarece.</span></h2></div></div><div class="faq"><details><summary>O totem é indicado para uso externo?</summary><p>Este modelo foi apresentado como Indoor, para ambientes internos. Não estamos anunciando certificação para chuva ou exposição externa.</p></details><details><summary>Posso atualizar o conteúdo sem estar perto do equipamento?</summary><p>O produto informado contempla conectividade Wi-Fi e sistema NovaStar, com possibilidade de atualização remota. A forma de operação depende do controlador e da instalação.</p></details><details><summary>O totem pode exibir vídeos e animações?</summary><p>Sim, o formato de mídia digital permite apresentar peças audiovisuais compatíveis com o controlador e as configurações de reprodução.</p></details><details><summary>O MídiaLed Indoor utiliza o mesmo painel do MMI TV?</summary><p>As soluções fazem parte do ecossistema MídiaMares, mas a integração técnica entre o player MMI TV e o sistema NovaStar depende de validação antes de ser oferecida como recurso.</p></details><details><summary>Existe um preço fixo para o equipamento?</summary><p>O valor não foi definido nesta apresentação. Solicite uma proposta considerando equipamento, necessidades de conteúdo e implantação.</p></details></div></div></section>
-
-<section class="section contact" id="contato"><div class="container"><span class="eyebrow">Vamos iluminar sua próxima ideia?</span><h2>Seu negócio merece ser <span class="gradient">impossível de ignorar.</span></h2><p class="lead">Solicite uma apresentação comercial do Totem LED P2.9 Indoor e conheça as possibilidades para o seu espaço.</p>
-<div class="actions"><a class="btn primary" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor.%20Gostaria%20de%20solicitar%20uma%20apresenta%C3%A7%C3%A3o%20comercial." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp ↗</a><a class="btn line" href="https://midiamares.com.br/" target="_blank" rel="noopener noreferrer">Conhecer o Grupo MídiaMares ↗</a></div>
-<div class="contact-cards"><a class="contact-card" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor." target="_blank" rel="noopener noreferrer"><span class="cc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1.1-.5-2-1.4-2.5-2.5l.9-1-1-2z"/></svg></span><span><small>WhatsApp</small><b>(81) 98183-0554</b></span></a><a class="contact-card" href="mailto:midiamares@gmail.com?subject=Totem%20LED%20P2.9%20Indoor"><span class="cc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>E-mail</small><b>midiamares@gmail.com</b></span></a></div>
+<div class="specs-wrap"><div class="specs">
+<div class="spec big acc"><span>Modelo</span><b>Totem LED Vertical Indoor</b></div><div class="spec acc"><span>Tecnologia</span><b>P2.9</b></div><div class="spec"><span>Resolução informada</span><b>650 × 2000 pixels</b></div>
+<div class="spec"><span>Altura total informada</span><b>1,99 m</b></div><div class="spec"><span>Largura</span><b>65 cm</b></div><div class="spec"><span>Área de exibição informada</span><b>2,00 m × 65 cm</b></div><div class="spec"><span>Profundidade/base</span><b>50 cm</b></div>
+<div class="spec"><span>Espessura</span><b>6 cm</b></div><div class="spec"><span>Conectividade</span><b>USB / HDMI / Wi-Fi</b></div><div class="spec"><span>Sistema</span><b>NovaStar</b></div><div class="spec"><span>Atualização de conteúdo</span><b>Remota e em tempo real*</b></div>
+<div class="spec"><span>Alimentação</span><b>220 V</b></div><div class="spec"><span>Consumo informado</span><b>1,6 kVA por módulo</b></div><div class="spec big"><span>Operação</span><b>Contínua</b></div>
+</div></div>
+<p class="note">Ficha baseada nas informações fornecidas para este modelo. Dimensões de altura total e área visível, resolução e consumo por módulo requerem confirmação no datasheet do fornecedor antes da contratação. *A atualização remota depende da configuração, conectividade e controlador instalado.</p>
 </div></section>
+
+<section class="section" id="como"><div class="container">
+<div class="head"><div><span class="kicker">A sua ideia no mundo real</span><h2>Simples de imaginar. <span class="hl">Fácil de apresentar.</span></h2></div></div>
+<div class="flow"><div class="flow-line" aria-hidden="true"><i></i></div>
+<article class="fstep"><span class="node">01</span><h3>Conte sua necessidade</h3><p>Qual ambiente receberá o totem? O que sua marca deseja comunicar?</p></article>
+<article class="fstep"><span class="node">02</span><h3>Definimos a solução</h3><p>Apresentamos o formato, as opções de conteúdo e os requisitos de operação.</p></article>
+<article class="fstep"><span class="node">03</span><h3>Sua comunicação ganha vida</h3><p>Com equipamento e programação definidos, a sua mensagem passa a ter presença.</p></article>
+</div></div></section>
+
+<section class="section" id="duvidas" style="background:var(--bg2)"><div class="container faq-grid">
+<div class="faq-side"><span class="kicker">Perguntas frequentes</span><h2>Você pergunta. <span class="hl">A gente esclarece.</span></h2><div class="ask"><b>Ficou alguma dúvida?</b><p>Fale direto com a gente pelo WhatsApp.</p><a class="btn b-line" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Totem%20LED%20P2.9%20Indoor." target="_blank" rel="noopener noreferrer">Perguntar no WhatsApp ↗</a></div></div>
+<div class="faq"><details><summary>O totem é indicado para uso externo?</summary><p>Este modelo foi apresentado como Indoor, para ambientes internos. Não estamos anunciando certificação para chuva ou exposição externa.</p></details><details><summary>Posso atualizar o conteúdo sem estar perto do equipamento?</summary><p>O produto informado contempla conectividade Wi-Fi e sistema NovaStar, com possibilidade de atualização remota. A forma de operação depende do controlador e da instalação.</p></details><details><summary>O totem pode exibir vídeos e animações?</summary><p>Sim, o formato de mídia digital permite apresentar peças audiovisuais compatíveis com o controlador e as configurações de reprodução.</p></details><details><summary>O MídiaLed Indoor utiliza o mesmo painel do MMI TV?</summary><p>As soluções fazem parte do ecossistema MídiaMares, mas a integração técnica entre o player MMI TV e o sistema NovaStar depende de validação antes de ser oferecida como recurso.</p></details><details><summary>Existe um preço fixo para o equipamento?</summary><p>O valor não foi definido nesta apresentação. Solicite uma proposta considerando equipamento, necessidades de conteúdo e implantação.</p></details></div>
+</div></section>
+
+<section class="sign" id="contato">
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Impossível de ignorar</span><span>Vamos iluminar sua próxima ideia</span><span>Impossível de ignorar</span><span>Vamos iluminar sua próxima ideia</span></div></div>
+<div class="container sign-grid"><div><span class="kicker">Vamos iluminar sua próxima ideia?</span><h2>Seu negócio merece ser <span class="hl">impossível de ignorar.</span></h2><p class="lead">Solicite uma apresentação comercial do Totem LED P2.9 Indoor e conheça as possibilidades para o seu espaço.</p></div>
+<div class="cards">
+<a class="ccard wa" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor.%20Gostaria%20de%20solicitar%20uma%20apresenta%C3%A7%C3%A3o%20comercial." target="_blank" rel="noopener noreferrer"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1.1-.5-2-1.4-2.5-2.5l.9-1-1-2z"/></svg></span><span><small>WhatsApp</small><b>(81) 98183-0554</b></span><span class="go" aria-hidden="true">↗</span></a>
+<a class="ccard" href="mailto:midiamares@gmail.com?subject=Totem%20LED%20P2.9%20Indoor"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>E-mail</small><b>midiamares@gmail.com</b></span><span class="go" aria-hidden="true">↗</span></a>
+<a class="ccard" href="https://midiamares.com.br/" target="_blank" rel="noopener noreferrer"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span><small>Ecossistema</small><b>Grupo MídiaMares</b></span><span class="go" aria-hidden="true">↗</span></a>
+</div></div>
+</section>
 </main>
-<footer class="foot"><div class="container footgrid"><div><img src="assets/marca-aprovada.webp" alt="MídiaLed Indoor" width="680" height="179" loading="lazy"><p>Painéis de LED para comunicação de alto impacto.</p></div><div class="footlinks"><a href="https://wa.me/5581981830554" target="_blank" rel="noopener noreferrer">(81) 98183-0554</a><a href="mailto:midiamares@gmail.com">midiamares@gmail.com</a><a href="#inicio">Voltar ao topo</a><a href="https://midiamares.com.br/" target="_blank" rel="noopener noreferrer">Grupo MídiaMares ↗</a></div><p>© 2026 MídiaLed Indoor</p></div></footer>
-<a class="sticky-call" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor." target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">Falar no WhatsApp ↗</a>
+<footer class="foot"><div class="container footgrid"><div><img src="assets/marca-aprovada.webp" alt="MídiaLed Indoor" width="680" height="179" loading="lazy"><p>Painéis de LED para comunicação de alto impacto.</p></div><div class="footlinks"><a href="https://wa.me/5581981830554" target="_blank" rel="noopener noreferrer">(81) 98183-0554</a><a href="mailto:midiamares@gmail.com">midiamares@gmail.com</a><a href="#inicio">Voltar ao topo</a></div><p>© 2026 MídiaLed Indoor</p></div></footer>
+<a class="sticky-call" href="https://wa.me/5581981830554?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Totem%20LED%20P2.9%20Indoor%20da%20M%C3%ADdiaLed%20Indoor." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1.1-.5-2-1.4-2.5-2.5l.9-1-1-2z"/></svg></a>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
 <script>
 /* Menu */
 {const b=document.getElementById('toggle'),n=document.getElementById('navlinks');b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'×':'☰'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}))}
-/* Motion: Lenis, revelação, títulos em máscara, parallax, progresso, CTA fixo */
-(()=>{const D=document,R=D.documentElement,$=(s,c=D)=>[...c.querySelectorAll(s)],motion=R.classList.contains('motion');
-$('.btn,.sticky-call').forEach(a=>{const t=a.lastChild;if(t&&t.nodeType===3&&/[↗↓]/.test(t.textContent)){const ch=t.textContent.includes('↗')?'↗':'↓';t.textContent=t.textContent.replace(ch,'').trimEnd()+' ';const s=D.createElement('span');s.className='btn__arrow';s.setAttribute('aria-hidden','true');s.textContent=ch;a.append(s)}});
-let lenis=null;if(motion&&window.Lenis){lenis=new Lenis({duration:1.15,easing:t=>1-Math.pow(1-t,4),anchors:false});const loop=t=>{lenis.raf(t);requestAnimationFrame(loop)};requestAnimationFrame(loop)}
-D.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.classList.contains('skip'))return;const id=a.getAttribute('href').slice(1),el=id&&D.getElementById(id);if(!el)return;e.preventDefault();const off=id==='inicio'?-200:-80;if(lenis)lenis.scrollTo(el,{offset:off});else scrollTo({top:el.getBoundingClientRect().top+scrollY+off,behavior:motion?'smooth':'auto'});history.replaceState(null,'','#'+id)});
-const header=D.querySelector('.navshell'),bar=D.querySelector('.progress'),sticky=D.querySelector('.sticky-call'),contact=D.getElementById('contato'),nav=D.getElementById('navlinks'),hero=D.querySelector('.hx'),heroText=D.querySelector('.hx-copy');
-const navLinks=$('a[href^="#"]:not(.btn)',nav),targets=navLinks.map(a=>D.getElementById(a.getAttribute('href').slice(1)));
-const ul=D.createElement('span');ul.className='nav-underline';ul.setAttribute('aria-hidden','true');nav.append(ul);
-let prog=0,want=0,active=-1;
-function tick(){const y=scrollY,vh=innerHeight,max=R.scrollHeight-vh;want=max>0?y/max:0;header.classList.toggle('is-scrolled',y>40);
-const near=contact.getBoundingClientRect().top<vh*.8,show=y>vh*.8&&!near;sticky.classList.toggle('show',show);sticky.tabIndex=show?0:-1;sticky.setAttribute('aria-hidden',String(!show));
-let a=-1;targets.forEach((t,i)=>{if(t&&t.getBoundingClientRect().top<=vh*.4)a=i});if(a!==active){active=a;navLinks.forEach((l,i)=>i===a?l.setAttribute('aria-current','true'):l.removeAttribute('aria-current'));if(a<0)ul.style.opacity=0;else{const l=navLinks[a];ul.style.opacity=1;ul.style.width=l.offsetWidth+'px';ul.style.transform=`translateX(${l.offsetLeft}px)`}}
-if(motion){const p=Math.min(Math.max(y/hero.offsetHeight,0),1);heroText.style.transform=`translateY(${p*.3*heroText.offsetHeight}px)`;heroText.style.opacity=1-Math.min(p/.75,1)}}
-let queued=false;addEventListener('scroll',()=>{kick();if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;tick()})}},{passive:true});addEventListener('resize',()=>{active=-2;tick()});
-let sm=0;function smooth(){prog+=(want-prog)*.18;if(Math.abs(want-prog)<.0005)prog=want;bar.style.transform=`scaleX(${prog})`;sm=prog!==want?requestAnimationFrame(smooth):0}function kick(){if(!sm)sm=requestAnimationFrame(smooth)}tick();kick();
-if(!motion)return;
-const intro=R.classList.contains('intro')?.75:0;
-const set=(sel,fn)=>$(sel).forEach((el,i)=>el.style.setProperty('--d',fn(i)+'s'));
-set('.hx .pill',()=>.3+intro);set('.hx .lead',()=>.9+intro);set('.hx .actions',()=>1.05+intro);set('.trust',()=>1.2+intro);set('.hx-product',()=>.5+intro);set('.statbar',()=>1.3+intro);
-set('.sectionhead .lead,.specintro>.lead',()=>.1);set('.valuegrid>*',i=>i*.12);set('.applications>*',i=>i*.08);set('.timeline>*',i=>.35+i*.35);set('.stage',()=>.1);set('.thumbs',()=>.2);set('.filters',()=>.1);set('.cta-band-inner>*',i=>i*.12);set('.faq details',i=>i*.08);set('.spec-table',()=>.15);set('.contact .lead',()=>.1);set('.contact .actions',()=>.2);set('.contact-cards',()=>.35);
-$('.thumb').forEach((t,i)=>t.style.setProperty('--w',i));
-const map=[['#solucao','up'],['#produto','slide'],['#aplicacoes','blur'],['#especificacoes','slide'],['#como','drop'],['#duvidas','flip'],['#contato','zoom']];
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2,rootMargin:'0px 0px -5% 0px'});
-$('.section h2').forEach(el=>{el.setAttribute('aria-label',el.textContent.replace(/\s+/g,' ').trim());let i=0;const walk=n=>[...n.childNodes].forEach(c=>{if(c.nodeType===1){if(c.classList.contains('gradient')){/* mantém o degradê em cada palavra */const words=c.textContent.split(/\s+/).filter(Boolean),f=D.createDocumentFragment();words.forEach((w,k)=>{if(k)f.append(' ');const m=D.createElement('span'),s=D.createElement('span');m.className='split-mask';m.setAttribute('aria-hidden','true');s.className='split-word gradient';s.style.setProperty('--i',i++);s.textContent=w;m.append(s);f.append(m)});c.replaceWith(f);return}return walk(c)}if(c.nodeType!==3)return;const f=D.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(!w.trim())return f.append(' ');const m=D.createElement('span'),s=D.createElement('span');m.className='split-mask';m.setAttribute('aria-hidden','true');s.className='split-word';s.style.setProperty('--i',i++);s.textContent=w;m.append(s);f.append(m)});c.replaceWith(f)});walk(el);el.classList.add('split-ready');const s=el.closest('section');for(const[sel,v] of map)if(s&&s.matches(sel)){if(v!=='up')el.dataset.split=v;break}io.observe(el)});
-$('.motion :is(.hx .pill,.hx .lead,.hx .actions,.trust,.hx-product,.statbar,.sectionhead .eyebrow,.sectionhead .lead,.valuegrid>*,.gallery-text>.eyebrow,.gallery-text>.lead,.filters,.thumbs,.gallery-text>.smallnote,.gallery-text>.actions,.applications>*,.specintro>:not(h2),.spec-table,.spec-grid .note,.timeline>*,.cta-band-brand,.cta-band-inner .btn,.faq details,.contact .eyebrow,.contact .lead,.contact .actions,.contact-cards)'.replace('.motion ','')).forEach(el=>io.observe(el));
-/* clip-path: observa o pai */
-['.stage','.cta-band p','.timeline'].forEach(s=>{const el=D.querySelector(s);if(!el)return;const o=new IntersectionObserver(es=>{if(es[0].isIntersecting){el.classList.add('in');o.disconnect()}},{threshold:.2});o.observe(s==='.timeline'?el:el.parentElement)});
-R.classList.add('motion-ready')})();
-/* Interações: brilho que segue o mouse, inclinação, botões magnéticos */
-(()=>{const D=document,$=s=>[...D.querySelectorAll(s)],fine=matchMedia('(hover:hover) and (pointer:fine)').matches,motion=D.documentElement.classList.contains('motion');if(!fine)return;
-$('.value,.appcard').forEach(el=>el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.setProperty('--mx',e.clientX-r.left+'px');el.style.setProperty('--my',e.clientY-r.top+'px')}));
-if(!motion)return;
-$('.thumb').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;el.style.setProperty('--ry',(x-.5)*14+'deg');el.style.setProperty('--rx',(.5-y)*11+'deg')});el.addEventListener('pointerleave',()=>{el.style.removeProperty('--ry');el.style.removeProperty('--rx')})});
-$('.hx .btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')})})();
-/* Vitrine do produto: duas camadas, troca só depois de carregar */
-(()=>{const D=document,$=s=>[...D.querySelectorAll(s)],reduce=!D.documentElement.classList.contains('motion'),stage=D.querySelector('.stage');if(!stage)return;
-const thumbs=$('.thumb'),media=stage.querySelector('.stage-media'),img=D.getElementById('stageImg'),info=stage.querySelector('.stage-info'),bar=stage.querySelector('.stage-progress'),pill=D.querySelector('.f-pill'),filters=$('.filters button'),cats={frente:'Frente',verso:'Frente e verso'};
-let cur=0,visible=thumbs.slice(),inView=false;
-const layers=[img,img.cloneNode()];layers[1].removeAttribute('id');layers[1].alt='';img.after(layers[1]);img.classList.add('on');if(!reduce)img.classList.add('kb');let front=0,swapId=0;
-function swapImg(src,alt){const id=++swapId,c=layers[front],b=layers[1-front];if(c.getAttribute('src')===src){c.alt=alt;return}b.src=src;const go=()=>{if(id!==swapId)return;b.alt=alt;c.alt='';b.classList.remove('kb');void b.offsetWidth;if(!reduce)b.classList.add('kb');b.classList.add('on');c.classList.remove('on');front=1-front};(b.decode?b.decode():Promise.resolve()).then(go,go)}
-const pad=n=>String(n).padStart(2,'0');
-function show(i){const t=thumbs[i];if(!t)return;cur=i;thumbs.forEach(x=>{x.classList.toggle('is-active',x===t);x===t?x.setAttribute('aria-current','true'):x.removeAttribute('aria-current')});
-swapImg(t.dataset.img,'Totem LED MídiaLed Indoor: '+t.dataset.name.toLowerCase());D.getElementById('stageCat').textContent=cats[t.dataset.cat];D.getElementById('stageTitle').textContent=t.dataset.name;D.getElementById('stageDesc').textContent=t.dataset.desc;D.getElementById('stageNum').textContent=pad(visible.indexOf(t)+1);D.getElementById('stageTotal').textContent=pad(visible.length);
-info.classList.remove('flash');void info.offsetWidth;if(!reduce)info.classList.add('flash');restart();const nx=visible[(visible.indexOf(t)+1)%visible.length];if(nx)(new Image()).src=nx.dataset.img}
-function step(d){const k=visible.indexOf(thumbs[cur]);show(+visible[(k+d+visible.length)%visible.length].dataset.i)}
-function restart(){bar.classList.remove('run');if(reduce||!inView)return;void bar.offsetWidth;bar.classList.add('run')}
-bar.addEventListener('animationend',()=>step(1));
-new IntersectionObserver(es=>{inView=es[0].isIntersecting;inView?restart():bar.classList.remove('run')},{threshold:.35}).observe(stage);
-thumbs.forEach(t=>t.addEventListener('click',()=>show(+t.dataset.i)));
-stage.querySelector('.stage-prev').addEventListener('click',()=>step(-1));stage.querySelector('.stage-next').addEventListener('click',()=>step(1));
-stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
-let sx=null;media.addEventListener('pointerdown',e=>sx=e.clientX);media.addEventListener('pointerup',e=>{if(sx!==null&&Math.abs(e.clientX-sx)>40)step(e.clientX<sx?1:-1);sx=null});
-function movePill(b){pill.style.width=b.offsetWidth+'px';pill.style.height=b.offsetHeight+'px';pill.style.transform=`translate(${b.offsetLeft}px,${b.offsetTop}px)`}
-filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>{x.classList.toggle('is-active',x===b);x.setAttribute('aria-pressed',String(x===b))});movePill(b);const c=b.dataset.cat;visible=thumbs.filter(t=>c==='all'||t.dataset.cat===c);thumbs.forEach(t=>{const on=visible.includes(t);t.classList.toggle('is-hidden',!on);t.classList.remove('pop');if(on&&!reduce){void t.offsetWidth;t.classList.add('pop')}});show(+visible[0].dataset.i)}));
-const act=()=>movePill(D.querySelector('.filters .is-active'));act();addEventListener('resize',act);D.fonts&&D.fonts.ready.then(act)})();
-/* Tema: segue o aparelho e lembra a escolha, com transição circular */
-(()=>{const R=document.documentElement,b=document.getElementById('themeBtn');
-const sync=()=>{const dark=R.dataset.theme!=='light';b.setAttribute('aria-pressed',String(dark));b.setAttribute('aria-label',dark?'Ativar modo claro':'Ativar modo escuro')};sync();
+/* Tema: segue o aparelho e lembra a escolha */
+(()=>{const R=document.documentElement,b=document.getElementById('themeBtn');const sync=()=>{const dark=R.dataset.theme!=='light';b.setAttribute('aria-pressed',String(dark));b.setAttribute('aria-label',dark?'Ativar modo claro':'Ativar modo escuro')};sync();
 b.addEventListener('click',e=>{const next=R.dataset.theme==='light'?'dark':'light',go=()=>{R.dataset.theme=next;try{localStorage.setItem('mli-theme',next)}catch(_){}sync()};
 if(!document.startViewTransition||!R.classList.contains('motion'))return go();const x=e.clientX||innerWidth-40,y=e.clientY||40,r=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));
 document.startViewTransition(go).ready.then(()=>R.animate({clipPath:[`circle(0 at ${x}px ${y}px)`,`circle(${r}px at ${x}px ${y}px)`]},{duration:650,easing:'cubic-bezier(.16,1,.3,1)',pseudoElement:'::view-transition-new(root)'}))})})();
-/* Hero: palavra giratória, luz e parede seguindo o mouse, pausa fora da tela */
-(()=>{const D=document,R=D.documentElement,hero=D.querySelector('.hx');if(!hero)return;const motion=R.classList.contains('motion');
-new IntersectionObserver(es=>hero.classList.toggle('hx-off',!es[0].isIntersecting)).observe(hero);
-const words=['na sua loja.','na sua clínica.','no seu evento.','no showroom.','no shopping.','na recepção.','na sua vitrine.'],w=D.querySelector('.hx-word');let i=0;
-if(motion&&w)setInterval(()=>{if(D.hidden||hero.classList.contains('hx-off'))return;w.classList.remove('in');w.classList.add('out');setTimeout(()=>{i=(i+1)%words.length;w.textContent=words[i];w.classList.remove('out');void w.offsetWidth;w.classList.add('in')},420)},2400);
-if(motion&&matchMedia('(hover:hover) and (pointer:fine)').matches){const wall=D.querySelector('.hx-wall-inner'),spot=D.querySelector('.hx-spot');let raf=0;hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{spot.style.transform=`translate(${x*r.width-500}px,${y*r.height-500}px)`;wall.style.transform=`rotateY(${-26+(x-.5)*6}deg) rotateX(${12-(y-.5)*5}deg) rotateZ(5deg)`})})}})();
+/* Rolagem, revelações, títulos que acendem, história do totem, linha do tempo */
+(()=>{const D=document,R=D.documentElement,$=(s,c=D)=>[...c.querySelectorAll(s)],motion=R.classList.contains('motion');
+$('.btn').forEach(a=>{const t=a.lastChild;if(t&&t.nodeType===3&&t.textContent.includes('↗')){t.textContent=t.textContent.replace('↗','').trimEnd()+' ';const s=D.createElement('span');s.className='btn__arrow';s.setAttribute('aria-hidden','true');s.textContent='↗';a.append(s)}});
+let lenis=null;if(motion&&window.Lenis){lenis=new Lenis({duration:1.15,easing:t=>1-Math.pow(1-t,4),anchors:false});const loop=t=>{lenis.raf(t);requestAnimationFrame(loop)};requestAnimationFrame(loop)}
+D.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.classList.contains('skip'))return;const id=a.getAttribute('href').slice(1),el=id&&D.getElementById(id);if(!el)return;e.preventDefault();const off=id==='inicio'?0:-90;if(lenis)lenis.scrollTo(el,{offset:off});else scrollTo({top:el.getBoundingClientRect().top+scrollY+off,behavior:motion?'smooth':'auto'});history.replaceState(null,'','#'+id)});
+const shell=D.querySelector('.navshell'),nav=D.getElementById('navlinks'),sticky=D.querySelector('.sticky-call'),contact=D.getElementById('contato'),flow=D.querySelector('.flow'),line=D.querySelector('.flow-line'),fsteps=$('.fstep');
+const links=$('a[href^="#"]:not(.btn)',nav),targets=links.map(a=>D.getElementById(a.getAttribute('href').slice(1)));let lastY=scrollY,active=-2;
+function tick(){const y=scrollY,vh=innerHeight;if(y>vh*.6&&y>lastY+4&&!nav.classList.contains('open'))shell.classList.add('hide');else if(y<lastY-4||y<vh*.6)shell.classList.remove('hide');lastY=y;
+const show=y>vh*.8&&contact.getBoundingClientRect().top>vh*.7;sticky.classList.toggle('show',show);sticky.tabIndex=show?0:-1;
+let a=-1;targets.forEach((t,i)=>{if(t&&t.getBoundingClientRect().top<=vh*.4)a=i});if(a!==active){active=a;links.forEach((l,i)=>i===a?l.setAttribute('aria-current','true'):l.removeAttribute('aria-current'))}
+const r=flow.getBoundingClientRect(),p=Math.min(Math.max((vh*.6-r.top)/r.height,0),1);line.style.setProperty('--fp',p);fsteps.forEach(s=>s.classList.toggle('lit',s.getBoundingClientRect().top<vh*.6))}
+let q=false;addEventListener('scroll',()=>{if(!q){q=true;requestAnimationFrame(()=>{q=false;tick()})}},{passive:true});addEventListener('resize',()=>{active=-2;tick()});tick();
+/* história do totem: o capítulo no meio da tela troca a tela do totem */
+const stage=D.querySelector('.stage'),imgs=$('.t-screen img',stage),dots=$('.dots span',stage),chapters=$('.chapter');
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;chapters.forEach(c=>c.classList.toggle('on',c===e.target));const n=+e.target.dataset.step;stage.dataset.step=n;imgs.forEach((im,i)=>im.classList.toggle('on',i===n-1));dots.forEach((d,i)=>d.classList.toggle('on',i===n-1))}),{rootMargin:'-45% 0px -45% 0px'});
+chapters.forEach(c=>so.observe(c));chapters[0].classList.add('on');
+/* painéis de aplicações */
+const panels=$('.panel');const open=p=>panels.forEach(x=>x.classList.toggle('on',x===p));panels.forEach(p=>{p.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')open(p)});p.addEventListener('click',()=>open(p));p.addEventListener('focus',()=>open(p))});
+/* brilho seguindo o mouse nos blocos */
+if(matchMedia('(hover:hover)').matches)$('.tile').forEach(el=>el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.setProperty('--mx',e.clientX-r.left+'px');el.style.setProperty('--my',e.clientY-r.top+'px')}));
+/* loops pausados fora da tela */
+const po=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('off',!e.isIntersecting)));$('.ticker,.sign').forEach(el=>po.observe(el));
+if(!motion)return;
+const set=(sel,fn)=>$(sel).forEach((el,i)=>el.style.setProperty('--d',fn(i)+'s'));
+set('.led-side',()=>1.35);set('.led-meta',()=>1.6);set('.head .lead',()=>.15);set('.tile',i=>i*.14);set('.panel',i=>i*.09);set('.photo',i=>i*.1);set('.faq details',i=>i*.08);set('.ccard',i=>.15+i*.12);set('.faq-side .ask',()=>.2);set('.sign .lead',()=>.15);
+/* títulos: palavras acendem como LED, efeito diferente por seção */
+const fx={solucao:'flicker',produto:'scan',aplicacoes:'glitch',especificacoes:'scan',como:'flicker',duvidas:'glitch',contato:'zoom'};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2,rootMargin:'0px 0px -5% 0px'});
+$('main h2').forEach(h=>{h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());let i=0;const wrap=(node,cls)=>{const f=D.createDocumentFragment();node.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(!w.trim())return f.append(' ');const s=D.createElement('span');s.className='w'+(cls?' '+cls:'');s.setAttribute('aria-hidden','true');s.style.setProperty('--i',i++);s.textContent=w;f.append(s)});return f};
+[...h.childNodes].forEach(c=>{if(c.nodeType===3)c.replaceWith(wrap(c));else if(c.nodeType===1)c.replaceWith(wrap(c,c.className))});h.classList.add('lit-ready');const s=h.closest('section');const v=s&&fx[s.id];if(v&&v!=='flicker')h.dataset.fx=v;io.observe(h)});
+$('.led-side,.led-meta,.head .kicker,.head .lead,.tile,.chapter .num,.panel,.photo,.note,.fstep,.faq-side>:not(h2),.faq details,.sign-grid>div:first-child>:not(h2),.ccard').forEach(el=>io.observe(el));
+const specs=D.querySelector('.specs'),so2=new IntersectionObserver(es=>{if(es[0].isIntersecting){specs.classList.add('in');so2.disconnect()}},{threshold:.15});so2.observe(specs.parentElement);
+R.classList.add('motion-ready')})();
+/* ===== Painel de LED do hero (canvas em baixa resolução + máscara de pontos em CSS) ===== */
+(()=>{const D=document,hero=D.getElementById('inicio'),cv=D.getElementById('ledCanvas'),ctx=cv.getContext('2d',{alpha:false}),dotsEl=hero.querySelector('.led-dots'),motion=D.documentElement.classList.contains('motion');
+const names=['Ondas de luz','Mensagem rolando','Campanha','Equalizador'],btns=[...D.querySelectorAll('.hud-scenes button')],label=D.getElementById('sceneName');
+const SIN=new Float32Array(1024);for(let i=0;i<1024;i++)SIN[i]=Math.sin(i/1024*Math.PI*2);const S=v=>SIN[((v*162.97)|0)&1023];
+/* paleta da marca: preto → roxo → violeta → ciano → branco */
+const LR=new Uint8Array(256),LG=new Uint8Array(256),LB=new Uint8Array(256);{const st=[[0,4,2,14],[.3,75,0,130],[.55,157,53,235],[.8,0,229,255],[1,235,255,255]];for(let i=0;i<256;i++){const t=i/255;let k=0;while(k<st.length-2&&t>st[k+1][0])k++;const a=st[k],b=st[k+1],u=(t-a[0])/(b[0]-a[0]);LR[i]=a[1]+(b[1]-a[1])*u;LG[i]=a[2]+(b[2]-a[2])*u;LB[i]=a[3]+(b[3]-a[3])*u}}
+let W=0,H=0,P=9,img,buf,DIST,SEAM,TXT,TW=1,PH=null,EQ;
+const photos=['assets/telas/retrato.webp','assets/telas/rosto.webp','assets/telas/plumas.webp','assets/telas/celular.webp','assets/telas/laranja.webp'].map(s=>{const i=new Image();i.src=s;return i});
+function buildPhotos(){const c=D.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');x.fillStyle='#000';x.fillRect(0,0,W,H);const n=W>H*1.2?5:3,cw=W/n;
+photos.slice(0,n).forEach((im,i)=>{if(!im.complete||!im.naturalWidth)return;const s=Math.max(cw/im.naturalWidth,H/im.naturalHeight),w=im.naturalWidth*s,h=im.naturalHeight*s;x.save();x.beginPath();x.rect(i*cw,0,cw-1,H);x.clip();x.drawImage(im,i*cw+(cw-w)/2,(H-h)/2,w,h);x.restore()});
+const d=x.getImageData(0,0,W,H).data;PH=new Uint8Array(W*H*3);for(let i=0,j=0;i<d.length;i+=4,j+=3){PH[j]=d[i];PH[j+1]=d[i+1];PH[j+2]=d[i+2]}}
+function buildText(){const txt='SUA MARCA EM OUTRA DIMENSÃO  ✦  ',c=D.createElement('canvas'),x=c.getContext('2d'),fs=Math.round(H*.26),font=`900 ${fs}px Montserrat, Arial, sans-serif`;x.font=font;TW=Math.ceil(x.measureText(txt).width)||1;c.width=TW;c.height=H;x.font=font;x.fillStyle='#fff';x.textBaseline='middle';x.fillText(txt,0,H*.24);const d=x.getImageData(0,0,TW,H).data;TXT=new Uint8Array(TW*H);for(let i=0;i<TXT.length;i++)TXT[i]=d[i*4+3]}
+let running=false;
+function size(){const r=hero.getBoundingClientRect();P=innerWidth<640?7:innerWidth<1100?8:9;W=Math.ceil(r.width/P);H=Math.ceil(r.height/P);cv.width=W;cv.height=H;cv.style.width=W*P+'px';cv.style.height=H*P+'px';dotsEl.style.setProperty('--p',P+'px');
+img=ctx.createImageData(W,H);buf=new Uint32Array(img.data.buffer);DIST=new Float32Array(W*H);SEAM=new Float32Array(W*H);EQ=new Float32Array(Math.ceil(W/3)+1);const cx=W*.7,cy=H*.3;
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){const i=y*W+x;DIST[i]=Math.hypot(x-cx,y-cy);SEAM[i]=(x%32===0||y%32===0)?.6:1}buildText();buildPhotos();if(!running)draw(performance.now())}
+/* estado */
+let scene=0,next=-1,tStart=0,born=performance.now(),last=0,visible=true,auto=true,lastSwitch=born;const ripples=[];let mx=-999,my=-999,mOn=0;
+function pick(s){if(s===scene&&next<0)return;next=s;tStart=performance.now();btns.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===s)));label.textContent=names[s];if(!running){scene=s;next=-1;draw(performance.now())}}
+btns.forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();auto=false;pick(+b.dataset.s)}));
+const o=[0,0,0];
+function color(s,x,y,i,t){
+if(s===0){const v=S(x*.09+t)+S(y*.12-t*.8)+S((x+y)*.05+t*1.2)+S(DIST[i]*.16-t*2.2);const k=Math.min(255,Math.max(0,(v+4)*31.9))|0;o[0]=LR[k];o[1]=LG[k];o[2]=LB[k];return}
+if(s===1){const tx=((x+((t*14)|0))%TW+TW)%TW,a=TXT[y*TW+tx];if(a>90){const k=150+((x*2+t*80)|0)%105;o[0]=LR[k];o[1]=LG[k];o[2]=LB[k]}else{const bk=((S(x*.06+t)+S(y*.1-t)+2)*20)|0;o[0]=LR[bk]*.5;o[1]=LG[bk]*.5;o[2]=LB[bk]*.5}return}
+if(s===2&&PH){const j=i*3,sh=.82+.18*S(y*.35-t*5);o[0]=PH[j]*sh;o[1]=PH[j+1]*sh;o[2]=PH[j+2]*sh;return}
+if(s===3){if(x%3===2){o[0]=o[1]=o[2]=0;return}const h=EQ[(x/3)|0],dy=Math.abs(y-H*.3);if(dy<h&&(y&1)===0){const k=255-((dy/(H*.3))*160|0);o[0]=LR[k];o[1]=LG[k];o[2]=LB[k]}else if(dy>=h+1&&dy<h+2.2){o[0]=o[1]=o[2]=235}else{o[0]=4;o[1]=3;o[2]=14}return}
+o[0]=o[1]=o[2]=0}
+function draw(now){const t=(now-born)/1000,boot=motion?Math.min(1,(now-born)/1100):1;
+if(auto&&motion&&next<0&&now-lastSwitch>6500)pick((scene+1)%4);
+let sweep=-1;if(next>=0){const p=Math.min(1,(now-tStart)/900);sweep=p*(W+16)-8;if(p>=1){scene=next;next=-1;lastSwitch=now;sweep=-1}}
+if(scene===3||next===3){for(let b=0;b<EQ.length;b++){const v=(S(b*.37+t*3.1)*.5+.5)*(S(b*.11-t*1.7)*.35+.65)*(S(b*.9+t*7)*.15+.85);EQ[b]=v*H*.28+1}}
+const bootRow=boot*H,mR=W*.09,mR2=mOn?mR*mR:0;
+for(let y=0;y<H;y++){if(y>bootRow+1){buf.fill(0xff0e0402,y*W,y*W+W);continue}const scan=boot<1&&Math.abs(y-bootRow)<1.5;
+for(let x=0;x<W;x++){const i=y*W+x;let s=scene,edge=0;if(sweep>=0){if(x<sweep)s=next;const dd=Math.abs(x-sweep);if(dd<2)edge=1-dd/2}
+color(s,x,y,i,t);let k=SEAM[i];
+if(mR2){const dx=x-mx,dy=y-my,d2=dx*dx+dy*dy;if(d2<mR2)k*=1+(1-d2/mR2)*1.3}
+for(let r=0;r<ripples.length;r++){const rp=ripples[r],age=t-rp.t,rr=age*W*.5,dx=x-rp.x,dy=y-rp.y;if(dx>rr+2||dx<-rr-2||dy>rr+2||dy<-rr-2)continue;const dd=Math.abs(Math.sqrt(dx*dx+dy*dy)-rr);if(dd<1.6)k+=(1-dd/1.6)*1.6*(1-age/1.4)}
+let r=o[0]*k,g=o[1]*k,b=o[2]*k;if(edge){r+=200*edge;g+=255*edge;b+=255*edge}if(scan){r=g=b=255}
+buf[i]=0xff000000|((b>255?255:b)<<16)|((g>255?255:g)<<8)|(r>255?255:r)}}
+ctx.putImageData(img,0,0);for(let r=ripples.length-1;r>=0;r--)if(t-ripples[r].t>1.4)ripples.splice(r,1)}
+function loop(now){if(!running)return;if(now-last>=33){last=now;draw(now)}requestAnimationFrame(loop)}
+function start(){if(running||!motion||!visible||D.hidden)return;running=true;requestAnimationFrame(loop)}function stop(){running=false}
+new IntersectionObserver(es=>{visible=es[0].isIntersecting;visible?start():stop()}).observe(hero);D.addEventListener('visibilitychange',()=>D.hidden?stop():start());
+/* interação: luz segue o ponteiro, toque cria ondas */
+hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();mx=(e.clientX-r.left)/P;my=(e.clientY-r.top)/P;mOn=e.pointerType==='mouse'?1:0});
+hero.addEventListener('pointerleave',()=>{mOn=0});
+hero.addEventListener('pointerdown',e=>{if(e.target.closest('a,button')||!motion)return;const r=hero.getBoundingClientRect();ripples.push({x:(e.clientX-r.left)/P,y:(e.clientY-r.top)/P,t:(performance.now()-born)/1000});if(ripples.length>4)ripples.shift()});
+let rz,lw=innerWidth;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(innerWidth!==lw||!motion){lw=innerWidth;size()}},150)});photos.forEach(i=>i.addEventListener('load',()=>{if(W)buildPhotos()}));D.fonts&&D.fonts.ready.then(()=>{if(W)buildText()});
+if(!motion)born-=4000;size();start()})();
 </script>
 </body></html>
